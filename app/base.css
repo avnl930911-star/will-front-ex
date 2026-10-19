@@ -1,0 +1,12 @@
+@font-face{font-family:Pretendard;src:url('/admin-assets/PretendardVariable.woff2') format('woff2');font-weight:100 900;font-display:swap}
+html,body{margin:0;padding:0;min-height:100%;font-family:Pretendard,Arial,sans-serif}
+.willclub-admin-shell{min-height:100vh;background:#f8f5f2}
+.wc-admin-gate{box-sizing:border-box;max-width:540px;margin:0 auto;padding:90px 30px;color:#513739;text-align:center;display:flex;align-items:center;flex-direction:column;gap:18px}
+.wc-admin-gate h1{font-size:27px;margin:0}.wc-admin-gate p{line-height:1.7;margin:0}.wc-admin-gate a{color:#912c2f}.wc-admin-gate .primary{background:#912c2f;color:white;padding:13px 24px;border-radius:6px;text-decoration:none}.wc-admin-gate .muted{color:#827069;font-size:14px}
+.wc-sync-status{position:fixed;z-index:20000;bottom:22px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid #dbc8bd;box-shadow:0 5px 24px #41232818;padding:12px 20px;border-radius:9px;color:#53734f;font-size:14px;max-width:calc(100vw - 48px)}
+.wc-sync-status.error{color:#912c2f}.wc-sync-status button{border:0;background:none;color:inherit;font-size:22px;margin-left:20px;cursor:pointer}
+.willclub-page .detail-hero video{display:block;width:100%;max-height:75vh;object-fit:contain;background:#181516;aspect-ratio:16/9}
+.willclub-page .wc-live-error{background:#fff7f4;color:#912c2f;border:1px solid #dec8bc;border-radius:8px;padding:16px;margin:20px 0}
+.willclub-page .wc-live-error button{margin-left:14px;background:#912c2f;border:0;color:#fff;border-radius:5px;padding:7px 12px;cursor:pointer}
+.willclub-admin-shell .r-videos-upload-progress{padding:12px 14px;background:#f8f0e9;border:1px solid #e0ccbd;border-radius:6px;color:#74534c;font-size:14px;line-height:1.6}
+.willclub-admin-shell .r-videos-upload-progress progress{display:block;width:100%;height:7px;margin-top:8px;accent-color:#912c2f}

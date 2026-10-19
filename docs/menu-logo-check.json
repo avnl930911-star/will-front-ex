@@ -1,0 +1,147 @@
+{
+  "initial_hrefs": [
+    "/about",
+    "/guide",
+    "/freeInfo",
+    "/paidInfo",
+    "/vip",
+    "/support/notice"
+  ],
+  "screens": [
+    {
+      "width": 1680,
+      "logo": {
+        "x": 200,
+        "y": 3,
+        "width": 148,
+        "height": 77
+      },
+      "header_height": 83,
+      "menu_hrefs": [
+        "/about",
+        "/guide",
+        "/freeInfo",
+        "/paidInfo",
+        "/vip",
+        "/support/notice"
+      ]
+    },
+    {
+      "width": 1280,
+      "logo": {
+        "x": 40,
+        "y": 3,
+        "width": 148,
+        "height": 77
+      },
+      "header_height": 83,
+      "menu_hrefs": [
+        "/about",
+        "/guide",
+        "/freeInfo",
+        "/paidInfo",
+        "/vip",
+        "/support/notice"
+      ]
+    },
+    {
+      "width": 768,
+      "logo": {
+        "x": 28,
+        "y": 5,
+        "width": 116,
+        "height": 60
+      },
+      "header_height": 70,
+      "menu_hrefs": [
+        "/about",
+        "/guide",
+        "/freeInfo",
+        "/paidInfo",
+        "/vip",
+        "/support/notice"
+      ]
+    },
+    {
+      "width": 390,
+      "logo": {
+        "x": 18,
+        "y": 5,
+        "width": 104,
+        "height": 54
+      },
+      "header_height": 64,
+      "menu_hrefs": [
+        "/about",
+        "/guide",
+        "/freeInfo",
+        "/paidInfo",
+        "/vip",
+        "/support/notice"
+      ]
+    },
+    {
+      "width": 320,
+      "logo": {
+        "x": 18,
+        "y": 5,
+        "width": 104,
+        "height": 54
+      },
+      "header_height": 64,
+      "menu_hrefs": [
+        "/about",
+        "/guide",
+        "/freeInfo",
+        "/paidInfo",
+        "/vip",
+        "/support/notice"
+      ]
+    }
+  ],
+  "menus": [
+    {
+      "label": "회사소개",
+      "url": "http://localhost:3000/about",
+      "heading": "회사소개."
+    },
+    {
+      "label": "이용방법",
+      "url": "http://localhost:3000/guide",
+      "heading": "이용방법."
+    },
+    {
+      "label": "무료주식정보",
+      "url": "http://localhost:3000/freeInfo",
+      "heading": "무료주식정보."
+    },
+    {
+      "label": "주식교육영상",
+      "url": "http://localhost:3000/paidInfo",
+      "heading": "주식 교육 영상."
+    },
+    {
+      "label": "VIP 회원가입",
+      "url": "http://localhost:3000/vip",
+      "heading": "VIP 회원가입."
+    },
+    {
+      "label": "고객센터",
+      "url": "http://localhost:3000/support/notice",
+      "heading": "공지사항."
+    },
+    {
+      "url": "http://localhost:3000/support/faq",
+      "heading": "자주 묻는 질문."
+    },
+    {
+      "url": "http://localhost:3000/support/event",
+      "heading": "이벤트."
+    },
+    {
+      "url": "http://localhost:3000/login",
+      "heading": "회원 로그인."
+    }
+  ],
+  "errors": []
+}

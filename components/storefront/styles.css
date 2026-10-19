@@ -1,0 +1,385 @@
+
+.willclub-page {
+  --wc-brand: #912c2f;
+  --wc-brand-dark: #730000;
+  --wc-text: #252426;
+  --wc-muted: #858184;
+  --wc-line: #eeebea;
+  --wc-cream: #f4f1ed;
+  font-family: 'Pretendard Variable', 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--wc-text);
+  background: #fff;
+  font-size: calc(19px + 2pt);
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.willclub-page *, .willclub-page *::before, .willclub-page *::after { box-sizing: border-box; }
+.willclub-page a { color: inherit; text-decoration: none; }
+.willclub-page button, .willclub-page input, .willclub-page select { font: inherit; color: inherit; }
+.willclub-page button { cursor: pointer; border: 0; background: none; padding: 0; }
+.willclub-page button:disabled { cursor: default; }
+.willclub-page img { display: block; max-width: 100%; }
+.willclub-page h1, .willclub-page h2, .willclub-page h3, .willclub-page p { margin: 0; }
+.willclub-page button, .willclub-page a, .willclub-page select { -webkit-tap-highlight-color: transparent; }
+.willclub-page :focus-visible { outline: 2px solid var(--wc-brand); outline-offset: 4px; }
+.willclub-page .wc-container { width: min(1200px, calc(100% - 80px)); margin-inline: auto; }
+.willclub-page .icon-button { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.willclub-page .eyebrow { font-size: calc(13px + 2pt); letter-spacing: .16em; font-weight: 650; color: var(--wc-brand); }
+.willclub-page .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.willclub-page .wc-header { background: rgba(255,255,255,.97); border-bottom: 1px solid var(--wc-line); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(12px); }
+.willclub-page .header-inner { height: 83px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.willclub-page .brand { display: block; width: 91px; flex-shrink: 0; }
+.willclub-page .brand img { width: 91px; height: 48px; object-fit: contain; }
+.willclub-page .primary-nav { display: flex; align-items: center; gap: 24px; margin-left: auto; margin-right: 20px; }
+.willclub-page .primary-nav a { font-size: calc(16px + 2pt); font-weight: 550; display: flex; align-items: center; gap: 5px; position: relative; white-space: nowrap; transition: color .2s; }
+.willclub-page .primary-nav a:hover, .willclub-page .primary-nav a[aria-current] { color: var(--wc-brand); }
+.willclub-page .primary-nav a[aria-current]::after { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: var(--wc-brand); content: ''; top: -10px; left: calc(50% - 2px); }
+.willclub-page .header-actions { display: flex; align-items: center; gap: 14px; }
+.willclub-page .login-button { display: flex; align-items: center; gap: 7px; background: var(--wc-brand); border-radius: 6px; color: #fff; padding: 9px 16px; font-size: calc(15px + 2pt); font-weight: 550; transition: background .2s; }
+.willclub-page .login-button:hover { background: var(--wc-brand-dark); }
+.willclub-page .menu-button { display: none; width: 35px; height: 35px; }
+.willclub-page .page-main { padding-top: 29px; padding-bottom: 65px; }
+.willclub-page .breadcrumb { display: flex; align-items: center; gap: 9px; color: #776b70; font-size: calc(14px + 2pt); margin-bottom: 22px; }
+.willclub-page .breadcrumb span:last-child { color: #746d71; }
+.willclub-page .page-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 31px; }
+.willclub-page .page-heading h1 { font-size: calc(38px + 2pt); font-weight: 760; letter-spacing: -1.5px; line-height: 1.35; margin: 7px 0 8px; }
+.willclub-page .title-dot { color: var(--wc-brand); margin-left: 2px; }
+.willclub-page .page-heading p:not(.eyebrow) { color: #807a7d; font-size: calc(16px + 2pt); }
+.willclub-page .search-field { display: flex; align-items: center; gap: 10px; width: 480px; height: 48px; border: 1px solid #e6e2e1; background: #fff; border-radius: 7px; padding: 0 13px; color: #92898e; margin-bottom: 2px; transition: border .2s, box-shadow .2s; }
+.willclub-page .search-field:focus-within { border-color: #b67b7d; box-shadow: 0 0 0 3px #912c2f08; }
+.willclub-page .search-field input { border: 0; outline: 0; width: 100%; min-width: 0; color: var(--wc-text); background: transparent; font-size: calc(15px + 2pt); }
+.willclub-page .search-field input::-webkit-search-cancel-button { display: none; }
+.willclub-page .search-field input::placeholder { color: #776b70; }
+.willclub-page .search-field kbd { border: 1px solid #e8e3e3; background: #faf9f8; font: inherit; font-size: calc(13px + 2pt); border-radius: 4px; padding: 1px 4px; white-space: nowrap; color: #776b70; }
+.willclub-page .search-clear { display: inline-flex; color: #9a8e93; }
+.willclub-page .search-field:has(.search-clear) kbd { display: none; }
+.willclub-page .video-tabs { display: flex; gap: 28px; border-bottom: 1px solid #e8e4e3; margin-bottom: 26px; overflow-x: auto; scrollbar-width: none; }
+.willclub-page .video-tabs::-webkit-scrollbar { display: none; }
+.willclub-page .video-tab { display: inline-flex; align-items: center; gap: 8px; color: #776b70; font-size: calc(17px + 2pt); font-weight: 550; position: relative; padding: 0 2px 16px; white-space: nowrap; transition: color .18s; }
+.willclub-page .video-tab > span { border-radius: 4px; background: #f4f2f1; font-size: calc(13px + 2pt); padding: 1px 5px; color: #776b70; font-weight: 500; }
+.willclub-page .video-tab:hover, .willclub-page .video-tab.active { color: var(--wc-brand); }
+.willclub-page .video-tab.active { font-weight: 700; }
+.willclub-page .video-tab.active > span { color: var(--wc-brand); background: #f7ebeb; }
+.willclub-page .video-tab.active::after { content: ''; height: 2px; position: absolute; left: 0; right: 0; bottom: 0; background: var(--wc-brand); }
+.willclub-page .learning-banner { min-height: 170px; height: auto; border-radius: 10px; background: var(--wc-cream); position: relative; overflow: hidden; display: flex; animation: wc-reveal .3s ease-out; }
+.willclub-page .banner-copy { padding: 18px 41px; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; width: 64%; }
+.willclub-page .banner-eyebrow { display: flex; align-items: center; gap: 7px; font-size: calc(12px + 2pt); letter-spacing: .16em; font-weight: 650; color: var(--wc-brand); }
+.willclub-page .banner-eyebrow > span { width: 5px; height: 5px; border-radius: 50%; background: var(--wc-brand); }
+.willclub-page .banner-copy h2 { font-size: calc(38px + 2pt); line-height: 1.18; font-weight: 750; letter-spacing: -1.45px; white-space: pre-line; margin: 10px 0 0; }
+.willclub-page .banner-art { position: absolute; top: 0; right: 0; width: 43%; height: 100%; overflow: hidden; }
+.willclub-page .art-circle { position: absolute; width: 285px; height: 285px; border-radius: 50%; }
+.willclub-page .circle-one { right: 50px; top: 47px; background: #e8ded6; opacity: .85; }
+.willclub-page .circle-two { right: -91px; top: -69px; background: #dbc2bb; opacity: .4; }
+.willclub-page .art-ring { position: absolute; right: 21px; top: 43px; width: 289px; height: 289px; border: 1px solid #c6b8af; border-radius: 50%; opacity: .6; }
+.willclub-page .banner-monogram { position: absolute; font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 190px; letter-spacing: -24px; line-height: 1; color: #912c2f; opacity: .83; top: 50%; right: 105px; transform: translateY(-50%) rotate(-10deg); }
+.willclub-page .art-caption { position: absolute; right: 28px; bottom: 20px; font-size: calc(12px + 2pt); letter-spacing: .17em; font-weight: 500; color: #947d75; display: flex; flex-direction: column; }
+.willclub-page .art-index { position: absolute; right: 29px; top: 17px; font-size: calc(11px + 2pt); letter-spacing: .18em; color: #a89186; }
+.willclub-page .expert-banner .banner-monogram { font-size: 170px; top: 50%; right: 132px; }
+.willclub-page .expert-banner .banner-copy h2 { margin-top: 10px; font-size: calc(48px + 2pt); }
+.willclub-page .ggotge-banner .banner-monogram { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400; font-size: 170px; top: 50%; right: 132px; opacity: .83; letter-spacing: -12px; }
+.willclub-page .library-toolbar { display: flex; justify-content: space-between; align-items: center; margin-top: 25px; padding-bottom: 21px; border-bottom: 1px solid var(--wc-line); color: #776b70; font-size: calc(14px + 2pt); gap: 12px; }
+.willclub-page .library-toolbar > div { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.willclub-page .toolbar-dot { background: var(--wc-brand); width: 4px; height: 4px; border-radius: 50%; margin-right: 1px; }
+.willclub-page .total-count { margin-left: 10px; padding-left: 17px; border-left: 1px solid #e6e1e2; color: #776b70; }
+.willclub-page .library-toolbar b { color: var(--wc-brand); }
+.willclub-page .sort-label { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.willclub-page .sort-label select { background: transparent; border: none; font-size: calc(14px + 2pt); cursor: pointer; padding: 2px 3px; color: #736b70; }
+.willclub-page .video-section { margin-top: 31px; scroll-margin-top: 110px; }
+.willclub-page .section-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; margin-bottom: 18px; gap: 12px; }
+.willclub-page .section-title { display: flex; align-items: center; gap: 9px; }
+.willclub-page .section-icon { color: var(--wc-brand); display: flex; }
+.willclub-page .section-title h2 { font-size: calc(25px + 2pt); font-weight: 720; letter-spacing: -.65px; }
+.willclub-page .section-count { font-size: calc(15px + 2pt); color: #776b70; margin-left: 1px; font-weight: 500; }
+.willclub-page .section-heading p { font-size: calc(14px + 2pt); color: #776b70; margin-top: 4px; }
+.willclub-page .rail-controls { display: flex; align-items: center; gap: 7px; padding-bottom: 1px; }
+.willclub-page .rail-controls > span { font-size: calc(13px + 2pt); color: #776b70; margin-right: 8px; }
+.willclub-page .rail-arrow { width: 30px; height: 30px; border: 1px solid #e7e0e2; border-radius: 50%; color: #7e7279; transition: background .2s; }
+.willclub-page .rail-arrow:hover:not(:disabled) { background: #f7eeee; color: var(--wc-brand); border-color: #cfabaa; }
+.willclub-page .rail-arrow:disabled { opacity: .33; }
+.willclub-page .video-rail { display: flex; gap: 22px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x mandatory; padding: 2px 0 7px; }
+.willclub-page .video-rail::-webkit-scrollbar { display: none; }
+.willclub-page .video-card { flex: 0 0 calc((100% - 66px) / 4); width: calc((100% - 66px) / 4); min-width: 0; display: block; text-align: left; scroll-snap-align: start; border-radius: 8px; }
+.willclub-page .video-poster { aspect-ratio: 16/9; border-radius: 8px; background: #1c2331; overflow: hidden; position: relative; isolation: isolate; }
+.willclub-page .video-poster > img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.willclub-page .video-card:hover .video-poster > img { transform: scale(1.04); }
+.willclub-page .video-type { position: absolute; left: 9px; top: 9px; display: inline-flex; align-items: center; gap: 4px; font-size: calc(10px + 2pt); letter-spacing: .035em; color: #fff; background: #11131f90; border: 1px solid #ffffff26; padding: 4px 5px; border-radius: 3px; z-index: 2; backdrop-filter: blur(6px); }
+.willclub-page .video-type.type-free { color: #fff; background: #912c2fd9; }
+.willclub-page .duration { position: absolute; right: 7px; bottom: 7px; color: #fff; background: #111019b8; font-size: calc(13px + 2pt); font-variant-numeric: tabular-nums; padding: 1px 5px; border-radius: 3px; z-index: 2; }
+.willclub-page .poster-play { position: absolute; top: 50%; left: 50%; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; background: #912c2fdd; box-shadow: 0 2px 18px #0002; transform: translate(-50%,-40%); opacity: 0; transition: opacity .2s, transform .2s; padding-left: 2px; }
+.willclub-page .video-card:hover .poster-play, .willclub-page .video-card:focus-visible .poster-play { opacity: 1; transform: translate(-50%,-50%); }
+.willclub-page .card-information { padding: 12px 1px 0; }
+.willclub-page .card-expert { display: flex; flex-wrap: wrap; align-items: center; font-size: calc(13px + 2pt); font-weight: 550; color: #75656b; gap: 5px; }
+.willclub-page .expert-dot { height: 4px; width: 4px; border-radius: 50%; background: #a46161; }
+.willclub-page .expert-dot.expert-ggotge { background: #a08a6c; }
+.willclub-page .video-card h3 { font-size: calc(19px + 2pt); font-weight: 630; letter-spacing: -.36px; line-height: 1.5; margin-top: 6px; height: 3em; overflow: hidden; display: -webkit-box; line-clamp: 2; -webkit-line-clamp: 2; -webkit-box-orient: vertical; transition: color .2s; }
+.willclub-page .video-card:hover h3 { color: var(--wc-brand); }
+.willclub-page .card-price { display: inline-flex; align-items: center; justify-content: center; padding: 2px 6px; border: 1px solid #e4c9c9; border-radius: 4px; background: #f8eeee; color: var(--wc-brand); font-size: 14px; font-weight: 600; letter-spacing: -.1px; line-height: 1.2; white-space: nowrap; }
+.willclub-page .card-price.is-free { color: var(--wc-brand); font-size: 14px; }
+.willclub-page .typographic-poster { width: 100%; height: 100%; display: flex; flex-direction: column; padding: 30px 16px 12px; color: #f5efeb; background: #292431; position: relative; overflow: hidden; }
+.willclub-page .poster-education .typographic-poster { background: #403832; }
+.willclub-page .poster-market .typographic-poster { background: #28312d; }
+.willclub-page .poster-free .typographic-poster { background: #6f3338; }
+.willclub-page .typographic-poster::after { content: ''; width: 150px; height: 150px; border-radius: 50%; border: 22px solid #fff; opacity: .035; position: absolute; right: -40px; top: -17px; }
+.willclub-page .poster-eyebrow { font-size: calc(9px + 2pt); letter-spacing: .14em; color: #d6c0ae; margin-bottom: 7px; }
+.willclub-page .typographic-poster strong { font-size: calc(25px + 2pt); letter-spacing: -.9px; font-weight: 700; line-height: 1.3; z-index: 1; display: -webkit-box; line-clamp: 2; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.willclub-page .poster-author { flex-wrap: wrap; margin-top: auto; font-size: calc(11px + 2pt); color: #cdb6aa; display: flex; align-items: center; gap: 9px; padding-top: 7px; }
+.willclub-page .poster-author span { font-size: calc(8px + 2pt); letter-spacing: .13em; opacity: .6; }
+.willclub-page .poster-line { position: absolute; left: 0; bottom: 0; width: 3px; height: 100%; background: #b9817c; }
+.willclub-page .learning-note { display: flex; align-items: center; gap: 16px; background: #f8f6f4; padding: 25px 26px; border-radius: 7px; margin-top: 42px; color: #a17b76; }
+.willclub-page .learning-note strong { color: #685357; font-size: calc(15px + 2pt); font-weight: 600; }
+.willclub-page .learning-note p { color: #776b70; font-size: calc(14px + 2pt); margin-top: 3px; }
+.willclub-page .learning-note > span { margin-left: auto; font-size: calc(14px + 2pt); letter-spacing: .12em; font-weight: 650; opacity: .45; }
+.willclub-page .empty-state { text-align: center; padding: 82px 16px 72px; }
+.willclub-page .empty-state > span { display: inline-flex; background: #f6efed; width: 73px; height: 73px; align-items: center; justify-content: center; border-radius: 50%; color: #ac7a77; margin-bottom: 20px; }
+.willclub-page .empty-state h2 { font-size: calc(25px + 2pt); letter-spacing: -.6px; }
+.willclub-page .empty-state p { margin-top: 9px; font-size: calc(16px + 2pt); color: #776b70; }
+.willclub-page .empty-state .primary-button { width: auto; margin: 25px auto 0; padding-inline: 22px; }
+.willclub-page .loading-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 22px; padding-top: 30px; }
+.willclub-page .skeleton-card > div { aspect-ratio: 16/9; border-radius: 8px; background: #f3efed; animation: wc-pulse 1.5s infinite; }
+.willclub-page .skeleton-card > span { display: block; height: 14px; margin-top: 12px; border-radius: 4px; background: #f3efed; width: 80%; }
+.willclub-page .skeleton-card > span:last-child { width: 45%; }
+.willclub-page .wc-footer { background: #f6f5f3; border-top: 1px solid #ede9e6; padding: 37px 0 0; }
+.willclub-page .footer-top { display: grid; grid-template-columns: 2.5fr 1fr 1fr 1.4fr; gap: 30px; padding-bottom: 26px; }
+.willclub-page .footer-brand img { width: 77px; height: 41px; object-fit: contain; opacity: .85; }
+.willclub-page .footer-brand p { font-size: calc(14px + 2pt); line-height: 1.7; color: #776b70; margin-top: 12px; }
+.willclub-page .footer-links, .willclub-page .footer-contact { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; font-size: calc(13px + 2pt); color: #776b70; }
+.willclub-page .footer-links > span, .willclub-page .footer-contact > span { color: #5e535a; font-weight: 650; margin-bottom: 4px; }
+.willclub-page .footer-links a { display: flex; gap: 3px; align-items: center; }
+.willclub-page .footer-links a:hover { color: var(--wc-brand); }
+.willclub-page .footer-contact a:nth-child(2) { font-size: calc(27px + 2pt); font-weight: 650; letter-spacing: -.5px; color: #5b4b52; }
+.willclub-page .company-info { border-top: 1px solid #e9e2e3; padding-top: 20px; font-size: calc(13px + 2pt); color: #776b70; line-height: 1.9; }
+.willclub-page .company-info i { display: inline-block; width: 1px; height: 7px; margin: 0 7px; background: #d9cfd3; }
+.willclub-page .investment-notice { color: #776b70; font-size: calc(13px + 2pt); line-height: 1.9; max-width: 1000px; margin-top: 12px; }
+.willclub-page .footer-bottom { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid #e9e2e3; padding: 17px 0; margin-top: 19px; font-size: calc(12px + 2pt); color: #776b70; }
+.willclub-page .footer-admin-link { white-space: nowrap; font-weight: 400; }
+.willclub-page .footer-admin-link:hover { color: var(--wc-brand); text-decoration: underline; text-underline-offset: 3px; }
+
+/* 상세 화면과 구매 UI: native dialog의 포커스 트랩과 Escape 지원 */
+.willclub-page .wc-dialog { border: 0; background: #fff; padding: 0; color: var(--wc-text); width: min(1050px, calc(100% - 40px)); max-height: calc(100dvh - 48px); overflow-y: auto; border-radius: 14px; box-shadow: 0 18px 100px #18101930; overscroll-behavior: contain; }
+.willclub-page .wc-dialog::backdrop { background: #21171bcc; backdrop-filter: blur(5px); }
+.willclub-page .poster-large .typographic-poster { padding: 15% 7% 7%; }
+.willclub-page .poster-large .typographic-poster strong { font-size: clamp(calc(28px + 2pt),calc(4vw + 3px + 2pt),calc(48px + 2pt)); }
+.willclub-page .poster-large .poster-eyebrow { font-size: calc(13px + 2pt); }
+.willclub-page .poster-large .poster-author { font-size: calc(16px + 2pt); }
+.willclub-page .poster-large .poster-author span { font-size: calc(11px + 2pt); }
+.willclub-page .muted { font-size: calc(15px + 2pt); color: #776b70; line-height: 1.9; }
+.willclub-page .primary-button { background: var(--wc-brand); color: #fff; min-height: 45px; border-radius: 6px; font-size: calc(15px + 2pt); font-weight: 600; display: flex; gap: 15px; align-items: center; justify-content: center; width: 100%; transition: background .2s; }
+.willclub-page .primary-button:hover { background: #762025; }
+.willclub-page .primary-button:disabled { background: #d7c7cc; }
+.willclub-page .compact-dialog { width: min(430px, calc(100% - 32px)); padding: 33px 30px 22px; position: fixed; }
+.willclub-page .dialog-close { width: 30px; height: 30px; position: absolute; right: 13px; top: 13px; color: #776b70; }
+.willclub-page .compact-dialog h2 { font-size: calc(28px + 2pt); letter-spacing: -.8px; line-height: 1.4; margin-top: 13px; font-weight: 720; }
+.willclub-page .compact-dialog > p.muted { margin-top: 14px; }
+.willclub-page .compact-dialog .primary-button { margin-top: 24px; }
+.willclub-page .dialog-symbol { color: var(--wc-brand); background: #f6eae9; display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; margin-bottom: 20px; }
+.willclub-page .text-button { display: block; margin: 15px auto 0; font-size: calc(14px + 2pt); color: #776b70; padding: 6px 0; }
+.willclub-page .order-video { display: flex; gap: 12px; padding: 19px 0; border-block: 1px solid var(--wc-line); margin-top: 22px; }
+.willclub-page .order-video .video-poster { width: 105px; flex-shrink: 0; border-radius: 4px; }
+.willclub-page .order-video .video-type, .willclub-page .order-video .poster-play, .willclub-page .order-video .poster-eyebrow, .willclub-page .order-video .poster-author { display: none; }
+.willclub-page .order-video .typographic-poster { padding: 12px; }
+.willclub-page .order-video .typographic-poster strong { font-size: calc(14px + 2pt); }
+.willclub-page .order-video .duration { font-size: calc(10px + 2pt); }
+.willclub-page .order-video > span { display: flex; flex-direction: column; gap: 5px; }
+.willclub-page .order-video small { color: #776b70; font-size: calc(12px + 2pt); }
+.willclub-page .order-video > span > strong { font-size: calc(15px + 2pt); font-weight: 600; line-height: 1.5; }
+.willclub-page .order-total { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
+.willclub-page .order-total > span { font-size: calc(14px + 2pt); color: #776b70; }
+.willclub-page .order-total > strong { font-size: calc(29px + 2pt); font-weight: 700; letter-spacing: -.8px; }
+.willclub-page .purchase-note { color: #776b70; font-size: calc(13px + 2pt); line-height: 1.8; background: #f8f1ef; padding: 13px 11px 13px 32px; margin-top: 17px; border-radius: 5px; position: relative; }
+.willclub-page .purchase-note svg { position: absolute; left: 10px; top: 15px; }
+.willclub-page .agreement { display: flex; align-items: flex-start; gap: 7px; font-size: calc(13px + 2pt); color: #776b70; margin-top: 21px; cursor: pointer; }
+.willclub-page .agreement input { accent-color: var(--wc-brand); margin: 1px 0 0; width: 13px; height: 13px; }
+.willclub-page .inline-notice { display: flex; gap: 6px; align-items: flex-start; padding: 10px; background: #f5ece9; font-size: calc(13px + 2pt); color: #776b70; margin-top: 10px; border-radius: 4px; }
+.willclub-page .inline-notice svg { flex-shrink: 0; }
+
+@keyframes wc-reveal { from { opacity: .3; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes wc-pulse { 50% { opacity: .45; } }
+@media (min-width: 1600px) { .willclub-page .wc-container { width: min(1280px,calc(100% - 100px)); } .willclub-page .video-card h3 { font-size: calc(19px + 2pt); height: 3em; } }
+@media (max-width: 1100px) {
+  .willclub-page .wc-container { width: calc(100% - 56px); }
+  .willclub-page .primary-nav { gap: 20px; margin-right: 15px; }
+  .willclub-page .primary-nav a { font-size: calc(15px + 2pt); }
+  .willclub-page .video-card { flex-basis: calc((100% - 44px) / 3); width: calc((100% - 44px) / 3); }
+  .willclub-page .banner-monogram { right: 75px; }
+  .willclub-page .banner-copy { width: 65%; }
+  .willclub-page .banner-art { width: 40%; }
+  .willclub-page .art-caption { right: 18px; }
+}
+@media (max-width: 850px) {
+  .willclub-page .header-inner { height: 70px; }
+  .willclub-page .brand, .willclub-page .brand img { width: 79px; }
+  .willclub-page .primary-nav { display: none; }
+  .willclub-page .menu-button { display: inline-flex; }
+  .willclub-page .primary-nav.is-open { display: flex; position: absolute; top: 70px; left: 0; right: 0; background: #fff; margin: 0; padding: 24px 30px; box-shadow: 0 12px 20px #29111910; align-items: stretch; flex-direction: column; gap: 22px; border-bottom: 1px solid #e7dce0; }
+  .willclub-page .primary-nav.is-open a { font-size: calc(17px + 2pt); }
+  .willclub-page .primary-nav a[aria-current]::after { display: none; }
+  .willclub-page .page-heading { align-items: flex-start; }
+  .willclub-page .search-field { width: 310px; margin-top: 32px; }
+  .willclub-page .page-heading h1 { font-size: calc(34px + 2pt); }
+  .willclub-page .banner-copy { padding: 18px 31px; width: 70%; }
+  .willclub-page .banner-copy h2 { font-size: calc(34px + 2pt); }
+  .willclub-page .banner-art { opacity: .65; width: 38%; }
+  .willclub-page .banner-monogram { right: 42px; }
+  .willclub-page .art-caption { display: none; }
+}
+@media (max-width: 650px) {
+  .willclub-page .wc-container { width: calc(100% - 36px); }
+  .willclub-page .header-inner { height: 64px; }
+  .willclub-page .brand, .willclub-page .brand img { width: 72px; }
+  .willclub-page .brand img { height: 38px; }
+  .willclub-page .primary-nav.is-open { top: 64px; }
+  .willclub-page .login-button { font-size: calc(14px + 2pt); padding: 7px 12px; }
+  .willclub-page .login-button svg { display: none; }
+  .willclub-page .page-main { padding-top: 19px; padding-bottom: 36px; }
+  .willclub-page .breadcrumb { margin-bottom: 20px; font-size: calc(13px + 2pt); }
+  .willclub-page .page-heading { flex-direction: column; gap: 20px; margin-bottom: 23px; }
+  .willclub-page .page-heading h1 { font-size: calc(33px + 2pt); margin-top: 6px; }
+  .willclub-page .page-heading p:not(.eyebrow) { font-size: calc(15px + 2pt); }
+  .willclub-page .search-field { margin: 0; width: 100%; height: 44px; }
+  .willclub-page .video-tabs { gap: 23px; margin-bottom: 20px; margin-right: -18px; padding-right: 18px; }
+  .willclub-page .video-tab { font-size: calc(16px + 2pt); gap: 6px; padding-bottom: 13px; }
+  .willclub-page .video-tab > span { font-size: calc(12px + 2pt); }
+  .willclub-page .video-tab svg { display: none; }
+  .willclub-page .learning-banner { min-height: 160px; height: auto; border-radius: 8px; }
+  .willclub-page .banner-copy { padding: 16px 23px; width: 100%; }
+  .willclub-page .banner-eyebrow { font-size: calc(10px + 2pt); letter-spacing: .1em; }
+  .willclub-page .banner-copy h2 { font-size: calc(30px + 2pt); margin: 10px 0 0; letter-spacing: -1px; line-height: 1.18; }
+  .willclub-page .banner-art { width: 100%; opacity: .15; }
+  .willclub-page .banner-monogram { right: -8px; top: 50%; font-size: 160px; }
+  .willclub-page .circle-one { right: -55px; top: 60px; width: 235px; height: 235px; }
+  .willclub-page .circle-two { right: -91px; }
+  .willclub-page .art-ring { right: -38px; }
+  .willclub-page .art-index { display: none; }
+  .willclub-page .expert-banner .banner-monogram { right: 10px; font-size: 150px; top: 50%; }
+  .willclub-page .expert-banner .banner-copy h2 { font-size: calc(38px + 2pt); }
+  .willclub-page .ggotge-banner .banner-monogram { right: 10px; top: 50%; font-size: 150px; }
+  .willclub-page .library-toolbar { margin-top: 22px; font-size: calc(13px + 2pt); padding-bottom: 17px; }
+  .willclub-page .total-count { display: none; }
+  .willclub-page .toolbar-dot { display: none; }
+  .willclub-page .sort-label { gap: 3px; }
+  .willclub-page .sort-label select { font-size: calc(13px + 2pt); }
+  .willclub-page .video-section { margin-top: 28px; scroll-margin-top: 85px; }
+  .willclub-page .section-title { gap: 7px; }
+  .willclub-page .section-title h2 { font-size: calc(23px + 2pt); }
+  .willclub-page .section-heading p { font-size: calc(13px + 2pt); }
+  .willclub-page .section-count { font-size: calc(14px + 2pt); }
+  .willclub-page .rail-controls > span { display: none; }
+  .willclub-page .rail-controls { gap: 5px; }
+  .willclub-page .rail-arrow { width: 27px; height: 27px; }
+  .willclub-page .video-rail { gap: 14px; margin-right: -18px; padding-right: 18px; }
+  .willclub-page .video-card { flex-basis: 79%; width: 79%; max-width: 320px; }
+  .willclub-page .video-card h3 { font-size: calc(18px + 2pt); }
+  .willclub-page .typographic-poster strong { font-size: calc(26px + 2pt); }
+  .willclub-page .learning-note { padding: 19px 16px; gap: 10px; margin-top: 31px; }
+  .willclub-page .learning-note > svg { flex-shrink: 0; }
+  .willclub-page .learning-note > span { display: none; }
+  .willclub-page .learning-note strong { font-size: calc(14px + 2pt); }
+  .willclub-page .learning-note p { font-size: calc(13px + 2pt); }
+  .willclub-page .wc-footer { padding-top: 25px; }
+  .willclub-page .footer-top { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .willclub-page .footer-brand { order: 0; }
+  .willclub-page .footer-contact { order: 1; padding-top: 4px; }
+  .willclub-page .footer-links { order: 2; font-size: calc(13px + 2pt); }
+  .willclub-page .company-info { font-size: calc(11px + 2pt); }
+  .willclub-page .investment-notice { font-size: calc(11px + 2pt); }
+  .willclub-page .footer-bottom { flex-direction: column; gap: 4px; font-size: calc(11px + 2pt); }
+  .willclub-page .loading-grid { grid-template-columns: repeat(2,1fr); }
+  .willclub-page .wc-dialog { width: calc(100% - 20px); max-height: calc(100dvh - 24px); border-radius: 10px; }
+  .willclub-page .compact-dialog { width: calc(100% - 32px); padding: 30px 24px 20px; }
+  .willclub-page .compact-dialog h2 { font-size: calc(27px + 2pt); }
+  .willclub-page .empty-state { padding: 55px 10px; }
+  .willclub-page .empty-state h2 { font-size: calc(23px + 2pt); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .willclub-page *, .willclub-page *::before, .willclub-page *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* 영상 상세: 전체 폭 썸네일 → 정보 → 구매 CTA → 카테고리별 레일 */
+.willclub-page .detail-page-main { padding-top: 24px; }
+.willclub-page .detail-navigation { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; color: #776b70; font-size: calc(14px + 2pt); }
+.willclub-page .back-to-library { display: inline-flex; align-items: center; gap: 7px; font-size: calc(15px + 2pt); font-weight: 550; color: #68545b; padding: 4px 0; }
+.willclub-page .back-to-library:hover { color: var(--wc-brand); }
+.willclub-page .detail-navigation > span > span { margin-left: 6px; }
+.willclub-page .detail-hero .video-poster { width: 100%; aspect-ratio: 16/9; border-radius: 9px; }
+.willclub-page .detail-hero .video-type { display: none; }
+.willclub-page .detail-hero .duration { font-size: calc(15px + 2pt); right: 11px; bottom: 11px; padding: 2px 6px; }
+.willclub-page .detail-information { margin-top: 21px; }
+.willclub-page .detail-information h1 { font-size: calc(31px + 2pt); line-height: 1.4; letter-spacing: -.8px; font-weight: 730; }
+.willclub-page .detail-information h1:focus { outline: none; }
+.willclub-page .detail-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: calc(14px + 2pt); color: #776b70; margin-top: 10px; }
+.willclub-page .detail-meta i { display: block; height: 2px; width: 2px; border-radius: 50%; background: #a7939c; }
+.willclub-page .detail-description { color: #776b70; font-size: calc(16px + 2pt); line-height: 1.9; margin-top: 20px; max-width: 980px; }
+.willclub-page .detail-library { margin-top: 44px; }
+.willclub-page .detail-library .video-section { margin-top: 40px; }
+.willclub-page .detail-library .video-section:first-child { margin-top: 0; }
+.willclub-page .detail-library .section-heading p { display: none; }
+.willclub-page .detail-library .section-icon { display: none; }
+.willclub-page .detail-library .section-title h2::before { content: '[ '; color: #76616a; font-weight: 450; }
+.willclub-page .detail-library .section-title h2::after { content: ' ]'; color: #76616a; font-weight: 450; }
+@media (max-width: 650px) {
+  .willclub-page .detail-page-main { padding-top: 17px; }
+  .willclub-page .detail-navigation { margin-bottom: 13px; font-size: calc(13px + 2pt); }
+  .willclub-page .back-to-library { font-size: calc(14px + 2pt); }
+  .willclub-page .detail-information { margin-top: 17px; }
+  .willclub-page .detail-information h1 { font-size: calc(24px + 2pt); letter-spacing: -.5px; }
+  .willclub-page .detail-meta { font-size: calc(13px + 2pt); gap: 6px; margin-top: 8px; }
+  .willclub-page .detail-description { font-size: calc(15px + 2pt); margin-top: 17px; }
+  .willclub-page .detail-hero .video-poster { border-radius: 6px; }
+  .willclub-page .detail-hero .duration { font-size: calc(13px + 2pt); right: 7px; bottom: 7px; }
+  .willclub-page .detail-library { margin-top: 35px; }
+  .willclub-page .detail-library .video-section { margin-top: 31px; }
+}
+
+/* 글자 확대에 따른 공간 보완 */
+.willclub-page .video-type { white-space: nowrap; }
+.willclub-page .typographic-poster strong { flex-shrink: 0; }
+.willclub-page .typographic-poster .poster-author { line-height: 1.4; }
+.willclub-page .poster-author span { white-space: nowrap; }
+.willclub-page .compact-dialog .primary-button { padding: 10px 12px; }
+@media (min-width: 851px) and (max-width: 1250px) {
+  .willclub-page .primary-nav { display: none; }
+  .willclub-page .menu-button { display: inline-flex; }
+  .willclub-page .primary-nav.is-open { display: flex; position: absolute; top: 83px; left: 0; right: 0; background: #fff; margin: 0; padding: 24px 30px; box-shadow: 0 12px 20px #29111910; align-items: stretch; flex-direction: column; gap: 22px; border-bottom: 1px solid #e7dce0; }
+  .willclub-page .primary-nav.is-open a { font-size: calc(17px + 2pt); }
+  .willclub-page .primary-nav a[aria-current]::after { display: none; }
+}
+
+/* 추가 2pt 확대 시 줄바꿈과 배너 제목을 안전하게 수용 */
+.willclub-page .page-heading > div { min-width: 0; }
+.willclub-page .search-field { max-width: 100%; flex-shrink: 0; }
+.willclub-page .search-field kbd { display: none; }
+.willclub-page .library-toolbar { flex-wrap: wrap; }
+.willclub-page .banner-eyebrow { overflow-wrap: anywhere; }
+.willclub-page .poster-eyebrow { margin-bottom: 4px; line-height: 1.3; }
+.willclub-page .poster-author { padding-top: 3px; }
+@media (min-width: 651px) and (max-width: 850px) {
+  .willclub-page .page-heading { flex-direction: column; gap: 18px; }
+  .willclub-page .search-field { width: 100%; margin-top: 0; }
+}
+@media (max-width: 650px) {
+  .willclub-page .banner-copy { padding: 14px 18px; }
+  .willclub-page .detail-navigation { flex-wrap: wrap; }
+}
+
+/* 전문가명과 금액은 한 줄, 카테고리는 섹션 제목에서만 표시 */
+.willclub-page .card-meta-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0; }
+.willclub-page .card-meta-row .card-expert { flex-wrap: nowrap; min-width: 0; }
+.willclub-page .card-meta-row .expert-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.willclub-page .card-meta-row .expert-dot { flex-shrink: 0; }
+.willclub-page .card-meta-row .card-price { flex-shrink: 0; margin-left: auto; }
+.willclub-page .card-information h3 { margin-top: 9px; }
+.willclub-page .detail-demo-note { margin-top: 14px; color: #776b70; font-size: 12px; }
+
+
+/* 제목·결제는 한 행, 제목 및 메타 하단의 얇은 구분선 */
+.willclub-page .detail-heading { padding-bottom: 19px; border-bottom: 1px solid #e6e0e2; }
+.willclub-page .detail-title-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: nowrap; gap: 24px; min-width: 0; }
+.willclub-page .detail-title-row h1 { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.willclub-page .detail-purchase { display: flex; align-items: center; flex: 0 0 auto; margin: 0; }
+.willclub-page .detail-purchase .primary-button { width: auto; min-height: 38px; height: auto; padding: 8px 15px; font-size: 15px; line-height: 1.4; gap: 10px; white-space: nowrap; }
+@media (max-width: 650px) {
+  .willclub-page .detail-heading { padding-bottom: 16px; }
+  .willclub-page .detail-title-row { gap: 12px; }
+  .willclub-page .detail-purchase .primary-button { min-height: 36px; padding: 7px 11px; font-size: 14px; gap: 7px; }
+}

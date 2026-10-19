@@ -1,0 +1,395 @@
+.willclub-page .wc-local-main {
+  min-width: 0;
+}
+
+.willclub-page .wc-local-heading {
+  margin-bottom: 30px;
+}
+
+.willclub-page .wc-local-panel,
+.willclub-page .wc-local-product,
+.willclub-page .wc-local-article,
+.willclub-page .wc-local-empty,
+.willclub-page .wc-local-read-error {
+  border: 1px solid var(--wc-line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.willclub-page .wc-local-panel {
+  padding: 31px 34px;
+}
+
+.willclub-page .wc-local-definition-list {
+  margin: 0;
+}
+
+.willclub-page .wc-local-definition-list > div {
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
+  gap: 20px;
+  padding: 17px 0;
+  border-top: 1px solid var(--wc-line);
+}
+
+.willclub-page .wc-local-definition-list > div:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.willclub-page .wc-local-definition-list > div:last-child {
+  padding-bottom: 0;
+}
+
+.willclub-page .wc-local-definition-list dt,
+.willclub-page .wc-local-product-meta dt {
+  color: #776b70;
+  font-size: calc(14px + 2pt);
+  font-weight: 600;
+}
+
+.willclub-page .wc-local-definition-list dd,
+.willclub-page .wc-local-product-meta dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: calc(16px + 2pt);
+  line-height: 1.7;
+}
+
+.willclub-page .wc-local-guide {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.willclub-page .wc-local-guide .wc-local-panel {
+  min-width: 0;
+  padding: 26px 24px;
+}
+
+.willclub-page .wc-local-step {
+  color: var(--wc-brand);
+  font-size: calc(13px + 2pt);
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.willclub-page .wc-local-guide h2,
+.willclub-page .wc-local-login h2,
+.willclub-page .wc-local-product h2 {
+  font-size: calc(24px + 2pt);
+  font-weight: 720;
+  letter-spacing: -.65px;
+  line-height: 1.4;
+}
+
+.willclub-page .wc-local-guide h2 {
+  margin-top: 11px;
+}
+
+.willclub-page .wc-local-guide p:not(.wc-local-step),
+.willclub-page .wc-local-login > p {
+  margin-top: 12px;
+  color: #776b70;
+  font-size: calc(15px + 2pt);
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.willclub-page .wc-local-guide a {
+  color: var(--wc-brand);
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.willclub-page .wc-local-product-list {
+  display: grid;
+  gap: 16px;
+}
+
+.willclub-page .wc-local-product {
+  padding: 29px 31px;
+}
+
+.willclub-page .wc-local-product-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+  margin: 20px 0 0;
+  padding: 17px 0;
+  border-block: 1px solid var(--wc-line);
+}
+
+.willclub-page .wc-local-product-meta > div {
+  min-width: 0;
+}
+
+.willclub-page .wc-local-product-meta dd {
+  margin-top: 4px;
+  font-weight: 620;
+}
+
+.willclub-page .wc-local-copy {
+  margin-top: 18px;
+  color: #5f565a;
+  font-size: calc(15px + 2pt);
+  line-height: 1.8;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.willclub-page .wc-local-cta {
+  width: fit-content;
+  min-width: 184px;
+  margin-top: 21px;
+  padding: 10px 18px;
+}
+
+.willclub-page .wc-local-provider-note {
+  margin-top: 16px;
+  color: #776b70;
+  font-size: calc(13px + 2pt);
+  line-height: 1.75;
+}
+
+.willclub-page .wc-local-tabs {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e8e4e3;
+  scrollbar-width: none;
+}
+
+.willclub-page .wc-local-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.willclub-page .wc-local-tabs a {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 0 2px 15px;
+  color: #776b70;
+  font-size: calc(16px + 2pt);
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+.willclub-page .wc-local-tabs a:hover,
+.willclub-page .wc-local-tabs a[aria-current='page'] {
+  color: var(--wc-brand);
+}
+
+.willclub-page .wc-local-tabs a[aria-current='page'] {
+  font-weight: 700;
+}
+
+.willclub-page .wc-local-tabs a[aria-current='page']::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  content: '';
+  background: var(--wc-brand);
+}
+
+.willclub-page .wc-local-article-list {
+  display: grid;
+  gap: 10px;
+}
+
+.willclub-page .wc-local-article {
+  overflow: hidden;
+}
+
+.willclub-page .wc-local-article details {
+  min-width: 0;
+}
+
+.willclub-page .wc-local-article summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-width: 0;
+  padding: 20px 23px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.willclub-page .wc-local-article summary::-webkit-details-marker {
+  display: none;
+}
+
+.willclub-page .wc-local-article-title {
+  min-width: 0;
+  font-size: calc(17px + 2pt);
+  font-weight: 630;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.willclub-page .wc-local-article-meta {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  color: #857a80;
+  font-size: calc(13px + 2pt);
+  white-space: nowrap;
+}
+
+.willclub-page .wc-local-article-meta span {
+  color: var(--wc-brand);
+}
+
+.willclub-page .wc-local-article-content {
+  margin: 0;
+  padding: 20px 23px;
+  border-top: 1px solid var(--wc-line);
+  color: #5f565a;
+  font-size: calc(15px + 2pt);
+  line-height: 1.85;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.willclub-page .wc-local-empty {
+  padding: 51px 20px;
+  color: #776b70;
+  text-align: center;
+  font-size: calc(16px + 2pt);
+}
+
+.willclub-page .wc-local-login {
+  max-width: 620px;
+}
+
+.willclub-page .wc-local-login .wc-local-cta {
+  margin-top: 23px;
+}
+
+.willclub-page .wc-local-login .wc-local-provider-note {
+  margin-top: 14px;
+}
+
+.willclub-page .wc-local-read-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  background: #fbf5f4;
+  color: #6c575d;
+  font-size: calc(14px + 2pt);
+}
+
+.willclub-page .wc-local-read-error p {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.willclub-page .wc-local-read-error button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 9px;
+  color: var(--wc-brand);
+  font-size: calc(14px + 2pt);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.willclub-page .wc-local-read-error button:disabled {
+  opacity: .55;
+}
+
+.willclub-page .wc-local-loading {
+  display: grid;
+  gap: 12px;
+}
+
+.willclub-page .wc-local-loading > span:not(.sr-only) {
+  display: block;
+  height: 68px;
+  border-radius: 8px;
+  background: #f3efed;
+  animation: wc-pulse 1.5s infinite;
+}
+
+@media (max-width: 850px) {
+  .willclub-page .wc-local-guide {
+    grid-template-columns: 1fr;
+  }
+
+  .willclub-page .wc-local-product-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .willclub-page .wc-local-heading {
+    margin-bottom: 23px;
+  }
+
+  .willclub-page .wc-local-panel,
+  .willclub-page .wc-local-product {
+    padding: 23px 18px;
+  }
+
+  .willclub-page .wc-local-definition-list > div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 14px 0;
+  }
+
+  .willclub-page .wc-local-guide {
+    gap: 10px;
+  }
+
+  .willclub-page .wc-local-guide .wc-local-panel {
+    padding: 21px 18px;
+  }
+
+  .willclub-page .wc-local-product-meta {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 14px 0;
+  }
+
+  .willclub-page .wc-local-cta {
+    width: 100%;
+  }
+
+  .willclub-page .wc-local-tabs {
+    gap: 23px;
+    margin-right: -18px;
+    padding-right: 18px;
+  }
+
+  .willclub-page .wc-local-article summary {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+    padding: 17px 16px;
+  }
+
+  .willclub-page .wc-local-article-meta {
+    font-size: calc(12px + 2pt);
+  }
+
+  .willclub-page .wc-local-article-content {
+    padding: 17px 16px;
+  }
+
+  .willclub-page .wc-local-read-error {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+}

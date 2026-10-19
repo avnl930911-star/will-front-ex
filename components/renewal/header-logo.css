@@ -1,0 +1,4 @@
+/* 기존 고객 페이지 로고의 실제 표시 치수만 공통 원본 헤더에 적용합니다. */
+.renewal-main .ex-logo img { width: 91px; height: 48px; object-fit: contain; }
+@media (max-width: 850px) { .renewal-main .ex-logo img { width: 79px; } }
+@media (max-width: 650px) { .renewal-main .ex-logo img { width: 72px; height: 38px; } }

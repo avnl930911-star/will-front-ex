@@ -1,0 +1,114 @@
+[
+  {
+    "page": "about",
+    "text_equal": true,
+    "heading_equal": true,
+    "header_equal": true,
+    "single_header_footer": true,
+    "errors": [],
+    "evidence": "첫 대조 실행의 저장된 터미널 결과"
+  },
+  {
+    "page": "guide",
+    "text_equal": true,
+    "heading_equal": true,
+    "header_equal": true,
+    "single_header_footer": true,
+    "errors": [],
+    "evidence": "첫 대조 실행의 저장된 터미널 결과"
+  },
+  {
+    "page": "freeInfo",
+    "text_equal": true,
+    "heading_equal": true,
+    "header_equal": true,
+    "single_header_footer": true,
+    "errors": [],
+    "evidence": "첫 대조 실행의 저장된 터미널 결과"
+  },
+  {
+    "page": "paidInfo",
+    "text_equal": true,
+    "heading_equal": true,
+    "header_equal": true,
+    "single_header_footer": true,
+    "errors": [],
+    "evidence": "첫 대조 실행의 저장된 터미널 결과"
+  },
+  {
+    "page": "vip",
+    "path": "/vip",
+    "text_equal": true,
+    "heading_equal": true,
+    "header_equal": true,
+    "single_header_footer": true,
+    "errors": []
+  },
+  {
+    "page": "notice",
+    "path": "/support/notice",
+    "text_equal": true,
+    "heading_equal": true,
+    "header_equal": true,
+    "single_header_footer": true,
+    "errors": [],
+    "original_heading": {
+      "font": "\"Pretendard Variable\", Pretendard, \"Noto Sans KR\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "size": "40.6667px",
+      "weight": "740",
+      "line": "56.9333px",
+      "color": "rgb(145, 44, 47)",
+      "letter": "-1.15px",
+      "width": 1200,
+      "height": 56.9
+    },
+    "actual_heading": {
+      "font": "\"Pretendard Variable\", Pretendard, \"Noto Sans KR\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "size": "40.6667px",
+      "weight": "740",
+      "line": "56.9334px",
+      "color": "rgb(145, 44, 47)",
+      "letter": "-1.15px",
+      "width": 1200,
+      "height": 56.9
+    }
+  },
+  {
+    "page": "faq",
+    "path": "/support/faq",
+    "text_equal": true,
+    "heading_equal": true,
+    "header_equal": true,
+    "single_header_footer": true,
+    "errors": [],
+    "original_heading": {
+      "font": "\"Pretendard Variable\", Pretendard, \"Noto Sans KR\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "size": "40.6667px",
+      "weight": "740",
+      "line": "56.9333px",
+      "color": "rgb(145, 44, 47)",
+      "letter": "-1.15px",
+      "width": 1200,
+      "height": 56.9
+    },
+    "actual_heading": {
+      "font": "\"Pretendard Variable\", Pretendard, \"Noto Sans KR\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "size": "40.6667px",
+      "weight": "740",
+      "line": "56.9334px",
+      "color": "rgb(145, 44, 47)",
+      "letter": "-1.15px",
+      "width": 1200,
+      "height": 56.9
+    }
+  },
+  {
+    "page": "event",
+    "path": "/support/event",
+    "text_equal": true,
+    "heading_equal": true,
+    "header_equal": true,
+    "single_header_footer": true,
+    "errors": []
+  }
+]

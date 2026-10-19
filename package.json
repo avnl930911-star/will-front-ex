@@ -1,0 +1,46 @@
+{
+  "name": "willclub-nextjs-integrated",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@10.8.2",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node server/index.mjs",
+    "build": "next build --webpack",
+    "start": "node scripts/start-production.mjs",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "test:video": "node --test tests/video-kit/*.test.js"
+  },
+  "dependencies": {
+    "basic-ftp": "6.2.3",
+    "cors": "2.8.6",
+    "dotenv": "17.4.2",
+    "express": "5.3.0",
+    "express-rate-limit": "8.7.1",
+    "file-type": "21.3.4",
+    "jose": "6.1.0",
+    "lucide-react": "0.468.0",
+    "multer": "2.4.0",
+    "mysql2": "3.24.6",
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "serverless-http": "4.0.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "esbuild": "0.25.11",
+    "postcss": "8.5.30",
+    "postcss-selector-parser": "7.1.6",
+    "supertest": "7.3.1",
+    "typescript": "5.9.3"
+  }
+}

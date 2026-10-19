@@ -1,0 +1,3696 @@
+{
+  "pages": [
+    {
+      "path": "/admin/members/all",
+      "title": "전체 회원",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "loginId",
+        "name",
+        "nickname",
+        "phone",
+        "group",
+        "end"
+      ],
+      "description": "회원 정보를 찾고 이용 서비스를 관리합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "유료 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/all"
+    },
+    {
+      "path": "/admin/members/bdc41bee-79a6-401a-bac8-254fe58d4e22",
+      "title": "골드마스터반 회원",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "loginId",
+        "name",
+        "nickname",
+        "phone",
+        "group",
+        "end"
+      ],
+      "description": "이용 중인 회원과 서비스 종료일을 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "유료 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/bdc41bee-79a6-401a-bac8-254fe58d4e22",
+      "filter": {
+        "key": "group",
+        "value": "골드마스터반"
+      }
+    },
+    {
+      "path": "/admin/members/c2955b9b-27d5-47f3-b0f8-bf8b0df93f78",
+      "title": "단타반 회원",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "loginId",
+        "name",
+        "nickname",
+        "phone",
+        "group",
+        "end"
+      ],
+      "description": "이용 중인 회원과 서비스 종료일을 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "유료 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/c2955b9b-27d5-47f3-b0f8-bf8b0df93f78",
+      "filter": {
+        "key": "group",
+        "value": "단타반"
+      }
+    },
+    {
+      "path": "/admin/members/5677b74b-f568-45ed-8bb1-ff79f0c94598",
+      "title": "골드해외반 회원",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "loginId",
+        "name",
+        "nickname",
+        "phone",
+        "group",
+        "end"
+      ],
+      "description": "이용 중인 회원과 서비스 종료일을 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "유료 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/5677b74b-f568-45ed-8bb1-ff79f0c94598",
+      "filter": {
+        "key": "group",
+        "value": "골드해외반"
+      }
+    },
+    {
+      "path": "/admin/members/450c3fb5-17b3-4421-9b62-e4fcbc02f1a1",
+      "title": "골드텐버거반 회원",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "loginId",
+        "name",
+        "nickname",
+        "phone",
+        "group",
+        "end"
+      ],
+      "description": "이용 중인 회원과 서비스 종료일을 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "유료 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/450c3fb5-17b3-4421-9b62-e4fcbc02f1a1",
+      "filter": {
+        "key": "group",
+        "value": "골드텐버거반"
+      }
+    },
+    {
+      "path": "/admin/members/98ec487c-dc55-4294-9a90-ab94afc32d7d",
+      "title": "꽃게선생반 회원",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "loginId",
+        "name",
+        "nickname",
+        "phone",
+        "group",
+        "end"
+      ],
+      "description": "이용 중인 회원과 서비스 종료일을 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "유료 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/98ec487c-dc55-4294-9a90-ab94afc32d7d",
+      "filter": {
+        "key": "group",
+        "value": "꽃게선생반"
+      }
+    },
+    {
+      "path": "/admin/members/expired",
+      "title": "만기 회원",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "loginId",
+        "name",
+        "nickname",
+        "phone",
+        "group",
+        "end"
+      ],
+      "description": "대상을 확인한 뒤 필요한 작업을 선택하세요.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "유료 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/expired",
+      "filter": {
+        "key": "status",
+        "value": "만기"
+      }
+    },
+    {
+      "path": "/admin/members/inactive",
+      "title": "장기 미접속 회원",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "loginId",
+        "name",
+        "nickname",
+        "phone",
+        "group",
+        "end"
+      ],
+      "description": "대상을 확인한 뒤 필요한 작업을 선택하세요.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "유료 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/inactive",
+      "filter": {
+        "key": "status",
+        "value": "휴면"
+      }
+    },
+    {
+      "path": "/admin/members/withdrawn",
+      "title": "탈퇴 회원",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "loginId",
+        "name",
+        "nickname",
+        "phone",
+        "group",
+        "end"
+      ],
+      "description": "대상을 확인한 뒤 필요한 작업을 선택하세요.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "유료 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/withdrawn",
+      "filter": {
+        "key": "status",
+        "value": "탈퇴"
+      }
+    },
+    {
+      "path": "/admin/members/stats",
+      "title": "회원 가입 통계",
+      "group": "members",
+      "domain": "members",
+      "columns": [
+        "joined",
+        "loginId",
+        "name",
+        "group",
+        "end"
+      ],
+      "description": "기간별 무료·유료 가입과 서비스를 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "회원 상태",
+          "type": "select",
+          "options": [
+            "정상",
+            "만기",
+            "휴면",
+            "탈퇴"
+          ],
+          "required": true
+        },
+        {
+          "key": "group",
+          "label": "이용 서비스",
+          "type": "select",
+          "options": [
+            "무료회원",
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "중복회원"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "서비스 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "서비스 종료일",
+          "type": "date"
+        },
+        {
+          "key": "balance",
+          "label": "주식교육영상 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true
+        },
+        {
+          "key": "paidPoints",
+          "label": "기존 보유 포인트",
+          "type": "number",
+          "min": 0,
+          "readonly": true,
+          "advanced": true,
+          "hint": "기존 홈페이지에서 가져온 포인트입니다. 사용 불가 · 프론트 마이페이지 노출 안 함",
+          "usable": false,
+          "frontVisible": false
+        },
+        {
+          "key": "freePoints",
+          "label": "무료 포인트",
+          "type": "number",
+          "min": 0,
+          "advanced": true,
+          "hint": "쿠폰 등으로 지급한 포인트입니다."
+        },
+        {
+          "key": "cafeNickname",
+          "label": "카페 닉네임",
+          "type": "text"
+        },
+        {
+          "key": "joined",
+          "label": "가입일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastVisit",
+          "label": "최근 접속일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "lastPayment",
+          "label": "최근 결제일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "visitCount",
+          "label": "방문수",
+          "type": "number",
+          "advanced": true,
+          "min": 0
+        },
+        {
+          "key": "withdrawn",
+          "label": "탈퇴일",
+          "type": "date",
+          "advanced": true
+        },
+        {
+          "key": "reason",
+          "label": "탈퇴 사유",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "관리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "회원 추가",
+      "sourcePath": "/admin/members/stats",
+      "readonly": true,
+      "type": "analytics"
+    },
+    {
+      "path": "/admin/payments/all",
+      "title": "전체 결제 내역",
+      "group": "payments",
+      "domain": "payments",
+      "columns": [
+        "loginId",
+        "name",
+        "product",
+        "amount",
+        "method",
+        "status",
+        "date"
+      ],
+      "description": "결제내역과 입금대기 상태를 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "회원 아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "회원 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "product",
+          "label": "결제 품목",
+          "type": "select",
+          "options": [
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "주식교육영상",
+            "포인트 충전"
+          ],
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "결제금액",
+          "type": "number",
+          "required": true,
+          "min": 1
+        },
+        {
+          "key": "method",
+          "label": "결제수단",
+          "type": "select",
+          "options": [
+            "카드",
+            "무통장입금",
+            "포인트"
+          ],
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "처리 상태",
+          "type": "select",
+          "options": [
+            "입금대기",
+            "완료",
+            "취소"
+          ],
+          "required": true
+        },
+        {
+          "key": "date",
+          "label": "결제일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "bank",
+          "label": "입금은행",
+          "type": "text"
+        },
+        {
+          "key": "depositor",
+          "label": "입금자명",
+          "type": "text"
+        },
+        {
+          "key": "receiptType",
+          "label": "현금영수증 구분",
+          "type": "select",
+          "options": [
+            "신청안함",
+            "소득공제",
+            "지출증빙"
+          ]
+        },
+        {
+          "key": "receiptNumber",
+          "label": "현금영수증 식별번호",
+          "type": "text",
+          "advanced": true,
+          "hint": "샘플 식별번호만 입력하세요. 운영번호는 전달본에 저장하지 마세요."
+        },
+        {
+          "key": "approval",
+          "label": "카드 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "receiptApproval",
+          "label": "현금영수증 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "cardCompany",
+          "label": "카드사",
+          "type": "select",
+          "options": [
+            "선택안함",
+            "국민",
+            "신한",
+            "삼성",
+            "현대",
+            "롯데",
+            "우리",
+            "하나",
+            "농협",
+            "비씨"
+          ],
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "처리 메모",
+          "type": "textarea"
+        }
+      ],
+      "sourcePath": "/admin/payments/all",
+      "readonly": true
+    },
+    {
+      "path": "/admin/payments/card",
+      "title": "카드 결제 내역",
+      "group": "payments",
+      "domain": "payments",
+      "columns": [
+        "loginId",
+        "name",
+        "product",
+        "amount",
+        "method",
+        "status",
+        "date"
+      ],
+      "description": "결제내역과 입금대기 상태를 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "회원 아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "회원 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "product",
+          "label": "결제 품목",
+          "type": "select",
+          "options": [
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "주식교육영상",
+            "포인트 충전"
+          ],
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "결제금액",
+          "type": "number",
+          "required": true,
+          "min": 1
+        },
+        {
+          "key": "method",
+          "label": "결제수단",
+          "type": "select",
+          "options": [
+            "카드",
+            "무통장입금",
+            "포인트"
+          ],
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "처리 상태",
+          "type": "select",
+          "options": [
+            "입금대기",
+            "완료",
+            "취소"
+          ],
+          "required": true
+        },
+        {
+          "key": "date",
+          "label": "결제일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "bank",
+          "label": "입금은행",
+          "type": "text"
+        },
+        {
+          "key": "depositor",
+          "label": "입금자명",
+          "type": "text"
+        },
+        {
+          "key": "receiptType",
+          "label": "현금영수증 구분",
+          "type": "select",
+          "options": [
+            "신청안함",
+            "소득공제",
+            "지출증빙"
+          ]
+        },
+        {
+          "key": "receiptNumber",
+          "label": "현금영수증 식별번호",
+          "type": "text",
+          "advanced": true,
+          "hint": "샘플 식별번호만 입력하세요. 운영번호는 전달본에 저장하지 마세요."
+        },
+        {
+          "key": "approval",
+          "label": "카드 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "receiptApproval",
+          "label": "현금영수증 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "cardCompany",
+          "label": "카드사",
+          "type": "select",
+          "options": [
+            "선택안함",
+            "국민",
+            "신한",
+            "삼성",
+            "현대",
+            "롯데",
+            "우리",
+            "하나",
+            "농협",
+            "비씨"
+          ],
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "처리 메모",
+          "type": "textarea"
+        }
+      ],
+      "sourcePath": "/admin/payments/card",
+      "filter": {
+        "key": "method",
+        "value": "카드"
+      },
+      "readonly": true
+    },
+    {
+      "path": "/admin/payments/bank",
+      "title": "무통장 입금 내역",
+      "group": "payments",
+      "domain": "payments",
+      "columns": [
+        "loginId",
+        "name",
+        "product",
+        "amount",
+        "method",
+        "status",
+        "date"
+      ],
+      "description": "결제내역과 입금대기 상태를 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "회원 아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "회원 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "product",
+          "label": "결제 품목",
+          "type": "select",
+          "options": [
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "주식교육영상",
+            "포인트 충전"
+          ],
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "결제금액",
+          "type": "number",
+          "required": true,
+          "min": 1
+        },
+        {
+          "key": "method",
+          "label": "결제수단",
+          "type": "select",
+          "options": [
+            "카드",
+            "무통장입금",
+            "포인트"
+          ],
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "처리 상태",
+          "type": "select",
+          "options": [
+            "입금대기",
+            "완료",
+            "취소"
+          ],
+          "required": true
+        },
+        {
+          "key": "date",
+          "label": "결제일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "bank",
+          "label": "입금은행",
+          "type": "text"
+        },
+        {
+          "key": "depositor",
+          "label": "입금자명",
+          "type": "text"
+        },
+        {
+          "key": "receiptType",
+          "label": "현금영수증 구분",
+          "type": "select",
+          "options": [
+            "신청안함",
+            "소득공제",
+            "지출증빙"
+          ]
+        },
+        {
+          "key": "receiptNumber",
+          "label": "현금영수증 식별번호",
+          "type": "text",
+          "advanced": true,
+          "hint": "샘플 식별번호만 입력하세요. 운영번호는 전달본에 저장하지 마세요."
+        },
+        {
+          "key": "approval",
+          "label": "카드 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "receiptApproval",
+          "label": "현금영수증 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "cardCompany",
+          "label": "카드사",
+          "type": "select",
+          "options": [
+            "선택안함",
+            "국민",
+            "신한",
+            "삼성",
+            "현대",
+            "롯데",
+            "우리",
+            "하나",
+            "농협",
+            "비씨"
+          ],
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "처리 메모",
+          "type": "textarea"
+        }
+      ],
+      "primary": "입금 내역 추가",
+      "sourcePath": "/admin/payments/bank",
+      "filter": {
+        "key": "method",
+        "value": "무통장입금"
+      },
+      "readonly": false
+    },
+    {
+      "path": "/admin/vip-products",
+      "title": "VIP 상품 관리",
+      "group": "vip",
+      "domain": "products",
+      "columns": [
+        "title",
+        "expert",
+        "baseMonths",
+        "bonusMonths",
+        "amount",
+        "visible"
+      ],
+      "description": "상품별 기간·금액·입장 안내를 관리합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "상품명",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "expert",
+          "label": "전문가",
+          "type": "select",
+          "options": [
+            "골드마스터",
+            "꽃게선생"
+          ],
+          "required": true
+        },
+        {
+          "key": "visible",
+          "label": "판매 상태",
+          "type": "select",
+          "options": [
+            "판매중",
+            "판매중지"
+          ]
+        },
+        {
+          "key": "image",
+          "label": "전문가 이미지",
+          "type": "image"
+        },
+        {
+          "key": "telegram",
+          "label": "텔레그램 입장 주소",
+          "type": "url"
+        },
+        {
+          "key": "baseMonths",
+          "label": "기본 개월수",
+          "type": "number",
+          "min": 1,
+          "required": true
+        },
+        {
+          "key": "bonusMonths",
+          "label": "추가 서비스 개월수",
+          "type": "number",
+          "min": 0
+        },
+        {
+          "key": "amount",
+          "label": "기본 금액",
+          "type": "number",
+          "min": 0,
+          "required": true
+        },
+        {
+          "key": "options",
+          "label": "기간별 이용권",
+          "type": "options",
+          "hint": "이용권별 기본기간·추가기간·결제금액을 설정합니다."
+        },
+        {
+          "key": "event",
+          "label": "이벤트 적용",
+          "type": "toggle"
+        },
+        {
+          "key": "eventText",
+          "label": "이벤트 안내",
+          "type": "textarea"
+        },
+        {
+          "key": "content",
+          "label": "상품 상세 내용",
+          "type": "rich"
+        }
+      ],
+      "primary": "상품 등록",
+      "sourcePath": "/admin/vip-products"
+    },
+    {
+      "path": "/admin/board/expert/8bd3703c-2f94-4067-b366-f97323116386",
+      "title": "골드마스터 게시판",
+      "group": "board",
+      "domain": "articles",
+      "columns": [
+        "title",
+        "visibility",
+        "pinned",
+        "date"
+      ],
+      "description": "무료주식정보 게시글과 공지를 관리합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "게시글 제목",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "board",
+          "label": "게시판",
+          "type": "select",
+          "options": [
+            "골드마스터 게시판",
+            "꽃게선생 게시판",
+            "공지사항",
+            "이벤트",
+            "자주묻는질문"
+          ],
+          "required": true
+        },
+        {
+          "key": "visibility",
+          "label": "공개 범위",
+          "type": "select",
+          "options": [
+            "공개",
+            "전체공개",
+            "무료회원공개",
+            "유료회원공개",
+            "회원전용",
+            "비공개"
+          ]
+        },
+        {
+          "key": "copyAllowed",
+          "label": "복사 허용",
+          "type": "toggle",
+          "advanced": true
+        },
+        {
+          "key": "pinned",
+          "label": "상단 공지",
+          "type": "toggle"
+        },
+        {
+          "key": "date",
+          "label": "게시일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "titleColor",
+          "label": "제목 글자색",
+          "type": "color",
+          "advanced": true
+        },
+        {
+          "key": "titleSize",
+          "label": "제목 글자크기(px)",
+          "type": "number",
+          "min": 12,
+          "max": 48,
+          "advanced": true,
+          "defaultValue": 18
+        },
+        {
+          "key": "bold",
+          "label": "제목 굵게",
+          "type": "toggle",
+          "advanced": true
+        },
+        {
+          "key": "content",
+          "label": "게시글 본문",
+          "type": "rich",
+          "required": true
+        }
+      ],
+      "primary": "글 작성",
+      "sourcePath": "/admin/board/expert/8bd3703c-2f94-4067-b366-f97323116386",
+      "filter": {
+        "key": "board",
+        "value": "골드마스터 게시판"
+      },
+      "actions": [
+        "공지사항 추가",
+        "홍보팝업문구"
+      ]
+    },
+    {
+      "path": "/admin/board/expert/a92bf325-8f3a-48b1-b656-4b323c5f5d69",
+      "title": "꽃게선생 게시판",
+      "group": "board",
+      "domain": "articles",
+      "columns": [
+        "title",
+        "visibility",
+        "pinned",
+        "date"
+      ],
+      "description": "무료주식정보 게시글과 공지를 관리합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "게시글 제목",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "board",
+          "label": "게시판",
+          "type": "select",
+          "options": [
+            "골드마스터 게시판",
+            "꽃게선생 게시판",
+            "공지사항",
+            "이벤트",
+            "자주묻는질문"
+          ],
+          "required": true
+        },
+        {
+          "key": "visibility",
+          "label": "공개 범위",
+          "type": "select",
+          "options": [
+            "공개",
+            "전체공개",
+            "무료회원공개",
+            "유료회원공개",
+            "회원전용",
+            "비공개"
+          ]
+        },
+        {
+          "key": "copyAllowed",
+          "label": "복사 허용",
+          "type": "toggle",
+          "advanced": true
+        },
+        {
+          "key": "pinned",
+          "label": "상단 공지",
+          "type": "toggle"
+        },
+        {
+          "key": "date",
+          "label": "게시일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "titleColor",
+          "label": "제목 글자색",
+          "type": "color",
+          "advanced": true
+        },
+        {
+          "key": "titleSize",
+          "label": "제목 글자크기(px)",
+          "type": "number",
+          "min": 12,
+          "max": 48,
+          "advanced": true,
+          "defaultValue": 18
+        },
+        {
+          "key": "bold",
+          "label": "제목 굵게",
+          "type": "toggle",
+          "advanced": true
+        },
+        {
+          "key": "content",
+          "label": "게시글 본문",
+          "type": "rich",
+          "required": true
+        }
+      ],
+      "primary": "글 작성",
+      "sourcePath": "/admin/board/expert/a92bf325-8f3a-48b1-b656-4b323c5f5d69",
+      "filter": {
+        "key": "board",
+        "value": "꽃게선생 게시판"
+      },
+      "actions": [
+        "공지사항 추가",
+        "홍보팝업문구"
+      ]
+    },
+    {
+      "path": "/admin/board/paid-stock/8bd3703c-2f94-4067-b366-f97323116386",
+      "title": "골드마스터 주식교육영상",
+      "group": "board",
+      "domain": "videos",
+      "columns": [
+        "image",
+        "title",
+        "category",
+        "amount",
+        "visibility",
+        "date"
+      ],
+      "description": "영상·썸네일·길이·이용 금액을 관리합니다.",
+      "fields": [
+        {
+          "key": "content",
+          "label": "영상안내",
+          "type": "rich",
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "영상 결제금액",
+          "type": "number",
+          "min": 0,
+          "required": true
+        },
+        {
+          "key": "viewLimit",
+          "label": "영상 시청제한횟수",
+          "type": "number",
+          "min": 1,
+          "required": true,
+          "defaultValue": ""
+        },
+        {
+          "key": "image",
+          "label": "썸네일",
+          "type": "image"
+        },
+        {
+          "key": "category",
+          "label": "카테고리",
+          "type": "select",
+          "options": [
+            "주식분석",
+            "주식교육",
+            "시황분석",
+            "무료영상"
+          ],
+          "required": true
+        }
+      ],
+      "primary": "교육영상 등록",
+      "sourcePath": "/admin/board/paid-stock/8bd3703c-2f94-4067-b366-f97323116386",
+      "filter": {
+        "key": "expert",
+        "value": "골드마스터"
+      },
+      "actions": [
+        "홍보팝업문구"
+      ]
+    },
+    {
+      "path": "/admin/board/paid-stock/a92bf325-8f3a-48b1-b656-4b323c5f5d69",
+      "title": "꽃게선생 주식교육영상",
+      "group": "board",
+      "domain": "videos",
+      "columns": [
+        "image",
+        "title",
+        "category",
+        "amount",
+        "visibility",
+        "date"
+      ],
+      "description": "영상·썸네일·길이·이용 금액을 관리합니다.",
+      "fields": [
+        {
+          "key": "content",
+          "label": "영상안내",
+          "type": "rich",
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "영상 결제금액",
+          "type": "number",
+          "min": 0,
+          "required": true
+        },
+        {
+          "key": "viewLimit",
+          "label": "영상 시청제한횟수",
+          "type": "number",
+          "min": 1,
+          "required": true,
+          "defaultValue": ""
+        },
+        {
+          "key": "image",
+          "label": "썸네일",
+          "type": "image"
+        },
+        {
+          "key": "category",
+          "label": "카테고리",
+          "type": "select",
+          "options": [
+            "주식분석",
+            "주식교육",
+            "시황분석",
+            "무료영상"
+          ],
+          "required": true
+        }
+      ],
+      "primary": "교육영상 등록",
+      "sourcePath": "/admin/board/paid-stock/a92bf325-8f3a-48b1-b656-4b323c5f5d69",
+      "filter": {
+        "key": "expert",
+        "value": "꽃게선생"
+      },
+      "actions": [
+        "홍보팝업문구"
+      ]
+    },
+    {
+      "path": "/admin/board/support/notice",
+      "title": "공지사항",
+      "group": "board",
+      "domain": "articles",
+      "columns": [
+        "title",
+        "category",
+        "visibility",
+        "date"
+      ],
+      "description": "게시글을 작성하고 공개 상태를 관리합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "게시글 제목",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "content",
+          "label": "게시글작성",
+          "type": "rich",
+          "required": true
+        }
+      ],
+      "primary": "글 작성",
+      "sourcePath": "/admin/board/support/notice",
+      "filter": {
+        "key": "board",
+        "value": "공지사항"
+      }
+    },
+    {
+      "path": "/admin/board/support/event",
+      "title": "이벤트",
+      "group": "board",
+      "domain": "articles",
+      "columns": [
+        "title",
+        "category",
+        "visibility",
+        "date"
+      ],
+      "description": "게시글을 작성하고 공개 상태를 관리합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "이벤트 제목",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "period",
+          "label": "이벤트기간",
+          "type": "date-range",
+          "required": true
+        },
+        {
+          "key": "content",
+          "label": "이벤트내용",
+          "type": "rich",
+          "required": true
+        },
+        {
+          "key": "link",
+          "label": "이벤트 바로가기 URL",
+          "type": "url",
+          "required": true
+        }
+      ],
+      "primary": "글 작성",
+      "sourcePath": "/admin/board/support/event",
+      "filter": {
+        "key": "board",
+        "value": "이벤트"
+      }
+    },
+    {
+      "path": "/admin/board/support/faq",
+      "title": "자주 묻는 질문",
+      "group": "board",
+      "domain": "articles",
+      "columns": [
+        "title",
+        "category",
+        "visibility",
+        "date"
+      ],
+      "description": "게시글을 작성하고 공개 상태를 관리합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "게시글 제목",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "content",
+          "label": "게시글작성",
+          "type": "rich",
+          "required": true
+        }
+      ],
+      "primary": "글 작성",
+      "sourcePath": "/admin/board/support/faq",
+      "filter": {
+        "key": "board",
+        "value": "자주묻는질문"
+      }
+    },
+    {
+      "path": "/admin/design/main",
+      "title": "메인페이지 관리",
+      "group": "design",
+      "domain": "banners",
+      "columns": [
+        "image",
+        "title",
+        "order",
+        "visible",
+        "link"
+      ],
+      "description": "상단 배너와 윌클럽 운영반의 상품 연결을 관리합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "배너 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "image",
+          "label": "배너 이미지",
+          "type": "image"
+        },
+        {
+          "key": "mobileImage",
+          "label": "모바일 이미지",
+          "type": "image",
+          "advanced": true
+        },
+        {
+          "key": "link",
+          "label": "클릭 연결주소",
+          "type": "url"
+        },
+        {
+          "key": "order",
+          "label": "노출 순서",
+          "type": "number",
+          "min": 1,
+          "required": true
+        },
+        {
+          "key": "visible",
+          "label": "노출 상태",
+          "type": "select",
+          "options": [
+            "노출",
+            "숨김"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "노출 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "노출 종료일",
+          "type": "date"
+        }
+      ],
+      "primary": "추가",
+      "sourcePath": "/admin/design/main"
+    },
+    {
+      "path": "/admin/design/terms",
+      "title": "약관 · 정책 통합 관리",
+      "group": "design",
+      "domain": "terms",
+      "columns": [
+        "title",
+        "version",
+        "date"
+      ],
+      "description": "이용약관·개인정보·투자 유의사항 등 7개 문서를 한 화면에서 편집합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "문서명",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "type",
+          "label": "문서 종류",
+          "type": "select",
+          "options": [
+            "이용약관",
+            "개인정보 취급방침",
+            "투자 유의사항",
+            "개인정보 동의 VIP",
+            "개인정보 동의 주식교육영상",
+            "서비스 약관 VIP",
+            "서비스 약관 주식교육영상"
+          ],
+          "required": true
+        },
+        {
+          "key": "version",
+          "label": "버전",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "date",
+          "label": "적용일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "content",
+          "label": "약관 본문",
+          "type": "rich",
+          "required": true
+        }
+      ],
+      "primary": null,
+      "sourcePath": "/admin/design/terms?type=terms"
+    },
+    {
+      "path": "/admin/promotion/coupon",
+      "title": "서비스쿠폰발행",
+      "group": "promotion",
+      "domain": "coupons",
+      "columns": [
+        "title",
+        "issueMethod",
+        "status",
+        "issued",
+        "end",
+        "createdAt"
+      ],
+      "description": "원본 쿠폰 발행방법·혜택·운영설정을 관리합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "쿠폰명",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "code",
+          "label": "쿠폰번호",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "target",
+          "label": "지급 대상",
+          "type": "select",
+          "options": [
+            "전체회원",
+            "VIP회원",
+            "선택회원"
+          ],
+          "required": true
+        },
+        {
+          "key": "memberIds",
+          "label": "대상 회원 아이디",
+          "type": "textarea",
+          "advanced": true
+        },
+        {
+          "key": "discountType",
+          "label": "할인 구분",
+          "type": "select",
+          "options": [
+            "정액",
+            "정률"
+          ]
+        },
+        {
+          "key": "amount",
+          "label": "할인값",
+          "type": "number",
+          "required": true,
+          "min": 1
+        },
+        {
+          "key": "start",
+          "label": "시작일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "end",
+          "label": "종료일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "사용 상태",
+          "type": "select",
+          "options": [
+            "사용가능",
+            "중지",
+            "만료"
+          ]
+        },
+        {
+          "key": "usage",
+          "label": "쿠폰 이용 조건",
+          "type": "textarea",
+          "defaultValue": "VIP 회원 서비스에만 이용 가능합니다."
+        }
+      ],
+      "primary": "쿠폰만들기",
+      "sourcePath": "/admin/promotion/coupon"
+    },
+    {
+      "path": "/admin/promotion/point",
+      "title": "포인트 관리",
+      "group": "promotion",
+      "domain": "points",
+      "columns": [
+        "title",
+        "amount",
+        "bonus",
+        "visible"
+      ],
+      "description": "충전금액별 추가 지급 포인트를 설정합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "충전 상품명",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "충전금액(원)",
+          "type": "number",
+          "required": true,
+          "min": 1
+        },
+        {
+          "key": "bonus",
+          "label": "추가 지급 포인트",
+          "type": "number",
+          "required": true,
+          "min": 0
+        },
+        {
+          "key": "visible",
+          "label": "사용 상태",
+          "type": "select",
+          "options": [
+            "사용",
+            "중지"
+          ]
+        },
+        {
+          "key": "start",
+          "label": "적용 시작일",
+          "type": "date"
+        },
+        {
+          "key": "end",
+          "label": "적용 종료일",
+          "type": "date"
+        },
+        {
+          "key": "memo",
+          "label": "안내 문구",
+          "type": "textarea"
+        }
+      ],
+      "primary": "충전 상품 추가",
+      "sourcePath": "/admin/promotion/point",
+      "actions": [
+        "회원 포인트 조정",
+        "포인트 이용 내역"
+      ]
+    },
+    {
+      "path": "/admin/sms/compose",
+      "title": "실시간 문자 작성",
+      "group": "sms",
+      "domain": "smsHistory",
+      "columns": [],
+      "fields": [],
+      "description": "수신자를 입력하고 문자를 작성합니다."
+    },
+    {
+      "path": "/admin/sms/auto",
+      "title": "자동 문자 설정",
+      "group": "sms",
+      "domain": "smsRules",
+      "columns": [
+        "title",
+        "trigger",
+        "enabled"
+      ],
+      "description": "발송 시점과 문구를 설정합니다. 실제 문자 발송은 연동 후 가능합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "문자 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "trigger",
+          "label": "발송 시점",
+          "type": "select",
+          "options": [
+            "회원가입",
+            "결제완료",
+            "입금대기",
+            "입금확인",
+            "서비스 시작",
+            "서비스 만기 전",
+            "서비스 만기",
+            "쿠폰 발급"
+          ],
+          "required": true
+        },
+        {
+          "key": "enabled",
+          "label": "자동발송 사용",
+          "type": "toggle"
+        },
+        {
+          "key": "days",
+          "label": "만기 전 안내 일수",
+          "type": "number",
+          "min": 0
+        },
+        {
+          "key": "sender",
+          "label": "발신번호",
+          "type": "tel",
+          "required": true
+        },
+        {
+          "key": "content",
+          "label": "문자 내용",
+          "type": "textarea",
+          "required": true,
+          "hint": "{이름}, {서비스명}, {만기일}을 자동값 자리로 사용할 수 있습니다."
+        }
+      ],
+      "primary": "추가",
+      "sourcePath": "/admin/sms/auto"
+    },
+    {
+      "path": "/admin/sms/history",
+      "title": "문자 발송 내역",
+      "group": "sms",
+      "domain": "smsHistory",
+      "columns": [
+        "name",
+        "phone",
+        "title",
+        "status",
+        "date"
+      ],
+      "description": "성공·실패 기록과 발송 내용을 확인합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "발송 문구",
+          "type": "text"
+        },
+        {
+          "key": "name",
+          "label": "수신 회원",
+          "type": "text"
+        },
+        {
+          "key": "phone",
+          "label": "수신번호",
+          "type": "tel"
+        },
+        {
+          "key": "date",
+          "label": "발송일",
+          "type": "date"
+        },
+        {
+          "key": "status",
+          "label": "발송 결과",
+          "type": "select",
+          "options": [
+            "성공",
+            "실패",
+            "대기"
+          ]
+        },
+        {
+          "key": "content",
+          "label": "발송 내용",
+          "type": "textarea"
+        }
+      ],
+      "sourcePath": "/admin/sms/history",
+      "readonly": true
+    },
+    {
+      "path": "/admin/analytics/all",
+      "title": "전체 통계",
+      "group": "analytics",
+      "domain": "payments",
+      "columns": [
+        "date",
+        "product",
+        "amount",
+        "method",
+        "status"
+      ],
+      "description": "기간별 내역과 통계를 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "회원 아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "회원 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "product",
+          "label": "결제 품목",
+          "type": "select",
+          "options": [
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "주식교육영상",
+            "포인트 충전"
+          ],
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "결제금액",
+          "type": "number",
+          "required": true,
+          "min": 1
+        },
+        {
+          "key": "method",
+          "label": "결제수단",
+          "type": "select",
+          "options": [
+            "카드",
+            "무통장입금",
+            "포인트"
+          ],
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "처리 상태",
+          "type": "select",
+          "options": [
+            "입금대기",
+            "완료",
+            "취소"
+          ],
+          "required": true
+        },
+        {
+          "key": "date",
+          "label": "결제일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "bank",
+          "label": "입금은행",
+          "type": "text"
+        },
+        {
+          "key": "depositor",
+          "label": "입금자명",
+          "type": "text"
+        },
+        {
+          "key": "receiptType",
+          "label": "현금영수증 구분",
+          "type": "select",
+          "options": [
+            "신청안함",
+            "소득공제",
+            "지출증빙"
+          ]
+        },
+        {
+          "key": "receiptNumber",
+          "label": "현금영수증 식별번호",
+          "type": "text",
+          "advanced": true,
+          "hint": "샘플 식별번호만 입력하세요. 운영번호는 전달본에 저장하지 마세요."
+        },
+        {
+          "key": "approval",
+          "label": "카드 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "receiptApproval",
+          "label": "현금영수증 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "cardCompany",
+          "label": "카드사",
+          "type": "select",
+          "options": [
+            "선택안함",
+            "국민",
+            "신한",
+            "삼성",
+            "현대",
+            "롯데",
+            "우리",
+            "하나",
+            "농협",
+            "비씨"
+          ],
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "처리 메모",
+          "type": "textarea"
+        }
+      ],
+      "sourcePath": "/admin/analytics/all",
+      "readonly": true,
+      "type": "analytics"
+    },
+    {
+      "path": "/admin/analytics/total-revenue",
+      "title": "전체 매출내역",
+      "group": "analytics",
+      "domain": "payments",
+      "columns": [],
+      "description": "전문가별 월 매출을 합산하여 확인하고 엑셀로 내려받습니다.",
+      "fields": [],
+      "sourcePath": "/admin/analytics/total-revenue",
+      "readonly": true,
+      "type": "analytics"
+    },
+    {
+      "path": "/admin/analytics/revenue",
+      "title": "전문가 월별 매출내역",
+      "group": "analytics",
+      "domain": "payments",
+      "columns": [
+        "date",
+        "product",
+        "amount",
+        "method",
+        "status"
+      ],
+      "description": "기간별 내역과 통계를 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "회원 아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "회원 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "product",
+          "label": "결제 품목",
+          "type": "select",
+          "options": [
+            "골드마스터반",
+            "단타반",
+            "골드해외반",
+            "골드텐버거반",
+            "꽃게선생반",
+            "주식교육영상",
+            "포인트 충전"
+          ],
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "결제금액",
+          "type": "number",
+          "required": true,
+          "min": 1
+        },
+        {
+          "key": "method",
+          "label": "결제수단",
+          "type": "select",
+          "options": [
+            "카드",
+            "무통장입금",
+            "포인트"
+          ],
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "처리 상태",
+          "type": "select",
+          "options": [
+            "입금대기",
+            "완료",
+            "취소"
+          ],
+          "required": true
+        },
+        {
+          "key": "date",
+          "label": "결제일",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "bank",
+          "label": "입금은행",
+          "type": "text"
+        },
+        {
+          "key": "depositor",
+          "label": "입금자명",
+          "type": "text"
+        },
+        {
+          "key": "receiptType",
+          "label": "현금영수증 구분",
+          "type": "select",
+          "options": [
+            "신청안함",
+            "소득공제",
+            "지출증빙"
+          ]
+        },
+        {
+          "key": "receiptNumber",
+          "label": "현금영수증 식별번호",
+          "type": "text",
+          "advanced": true,
+          "hint": "샘플 식별번호만 입력하세요. 운영번호는 전달본에 저장하지 마세요."
+        },
+        {
+          "key": "approval",
+          "label": "카드 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "receiptApproval",
+          "label": "현금영수증 승인번호",
+          "type": "text",
+          "advanced": true
+        },
+        {
+          "key": "cardCompany",
+          "label": "카드사",
+          "type": "select",
+          "options": [
+            "선택안함",
+            "국민",
+            "신한",
+            "삼성",
+            "현대",
+            "롯데",
+            "우리",
+            "하나",
+            "농협",
+            "비씨"
+          ],
+          "advanced": true
+        },
+        {
+          "key": "memo",
+          "label": "처리 메모",
+          "type": "textarea"
+        }
+      ],
+      "sourcePath": "/admin/analytics/revenue",
+      "readonly": true,
+      "type": "analytics"
+    },
+    {
+      "path": "/admin/analytics/access",
+      "title": "접속 추이",
+      "group": "analytics",
+      "domain": "visits",
+      "columns": [
+        "loginId",
+        "date",
+        "ip",
+        "device",
+        "status"
+      ],
+      "description": "기간별 내역과 통계를 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text"
+        },
+        {
+          "key": "date",
+          "label": "접속일",
+          "type": "date"
+        },
+        {
+          "key": "ip",
+          "label": "접속IP",
+          "type": "text"
+        },
+        {
+          "key": "device",
+          "label": "접속 기기",
+          "type": "text"
+        },
+        {
+          "key": "status",
+          "label": "접속 결과",
+          "type": "text"
+        }
+      ],
+      "sourcePath": "/admin/analytics/access",
+      "readonly": true,
+      "type": "analytics"
+    },
+    {
+      "path": "/admin/analytics/access-status",
+      "title": "홈페이지 접속 현황",
+      "group": "analytics",
+      "domain": "visits",
+      "columns": [
+        "loginId",
+        "date",
+        "ip",
+        "device",
+        "status"
+      ],
+      "description": "기간별 내역과 통계를 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text"
+        },
+        {
+          "key": "date",
+          "label": "접속일",
+          "type": "date"
+        },
+        {
+          "key": "ip",
+          "label": "접속IP",
+          "type": "text"
+        },
+        {
+          "key": "device",
+          "label": "접속 기기",
+          "type": "text"
+        },
+        {
+          "key": "status",
+          "label": "접속 결과",
+          "type": "text"
+        }
+      ],
+      "sourcePath": "/admin/analytics/access-status",
+      "readonly": true,
+      "type": "analytics"
+    },
+    {
+      "path": "/admin/analytics/admin-access-status",
+      "title": "관리자 접속 기록",
+      "group": "analytics",
+      "domain": "visits",
+      "columns": [
+        "loginId",
+        "date",
+        "ip",
+        "device",
+        "status"
+      ],
+      "description": "기간별 내역과 통계를 확인합니다.",
+      "fields": [
+        {
+          "key": "loginId",
+          "label": "아이디",
+          "type": "text"
+        },
+        {
+          "key": "date",
+          "label": "접속일",
+          "type": "date"
+        },
+        {
+          "key": "ip",
+          "label": "접속IP",
+          "type": "text"
+        },
+        {
+          "key": "device",
+          "label": "접속 기기",
+          "type": "text"
+        },
+        {
+          "key": "status",
+          "label": "접속 결과",
+          "type": "text"
+        }
+      ],
+      "sourcePath": "/admin/analytics/admin-access-status",
+      "readonly": true,
+      "type": "analytics"
+    },
+    {
+      "path": "/admin/settings/general",
+      "title": "일반 설정",
+      "group": "settings",
+      "domain": "general",
+      "columns": [
+        "title",
+        "siteName"
+      ],
+      "description": "사이트 및 사업자 기본 정보 7개 항목을 관리합니다.",
+      "fields": [
+        {
+          "key": "title",
+          "label": "설정 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "siteName",
+          "label": "사이트명",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "대표전화",
+          "type": "tel"
+        },
+        {
+          "key": "email",
+          "label": "대표 이메일",
+          "type": "email"
+        },
+        {
+          "key": "company",
+          "label": "회사명",
+          "type": "text"
+        },
+        {
+          "key": "businessNumber",
+          "label": "사업자번호",
+          "type": "text"
+        },
+        {
+          "key": "representative",
+          "label": "대표자",
+          "type": "text"
+        },
+        {
+          "key": "mailOrderNumber",
+          "label": "통신판매업신고번호",
+          "type": "text"
+        },
+        {
+          "key": "privacyOfficer",
+          "label": "개인정보보호관리책임자",
+          "type": "text"
+        },
+        {
+          "key": "address",
+          "label": "주소",
+          "type": "textarea"
+        },
+        {
+          "key": "bank",
+          "label": "입금은행",
+          "type": "text"
+        },
+        {
+          "key": "accountNumber",
+          "label": "계좌번호",
+          "type": "text"
+        },
+        {
+          "key": "accountHolder",
+          "label": "예금주",
+          "type": "text"
+        },
+        {
+          "key": "logo",
+          "label": "사이트 로고",
+          "type": "image"
+        },
+        {
+          "key": "favicon",
+          "label": "브라우저 아이콘",
+          "type": "image",
+          "advanced": true
+        },
+        {
+          "key": "description",
+          "label": "사이트 소개",
+          "type": "textarea"
+        },
+        {
+          "key": "footer",
+          "label": "푸터 안내",
+          "type": "textarea"
+        },
+        {
+          "key": "content",
+          "label": "안내 본문",
+          "type": "rich",
+          "advanced": true
+        }
+      ],
+      "sourcePath": "/admin/settings/general",
+      "filter": {
+        "key": "id",
+        "value": "site"
+      },
+      "type": "settings"
+    },
+    {
+      "path": "/admin/staff/list",
+      "title": "운영진 관리",
+      "group": "settings",
+      "domain": "staff",
+      "columns": [
+        "loginId",
+        "name",
+        "role",
+        "status"
+      ],
+      "description": "역할과 메뉴별 접근 권한을 확인합니다.",
+      "fields": [
+        {
+          "key": "password",
+          "label": "비밀번호",
+          "type": "password",
+          "hint": "등록·변경 확인용입니다. 저장·전송하지 않습니다."
+        },
+        {
+          "key": "loginId",
+          "label": "운영진 아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "운영진 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "phone",
+          "label": "연락처",
+          "type": "tel"
+        },
+        {
+          "key": "email",
+          "label": "이메일",
+          "type": "email"
+        },
+        {
+          "key": "role",
+          "label": "역할",
+          "type": "select",
+          "options": [
+            "최고관리자",
+            "운영관리자",
+            "콘텐츠관리자",
+            "조회전용"
+          ],
+          "required": true
+        },
+        {
+          "key": "status",
+          "label": "접근 상태",
+          "type": "select",
+          "options": [
+            "사용",
+            "중지"
+          ]
+        },
+        {
+          "key": "permissions",
+          "label": "메뉴별 권한",
+          "type": "permissions"
+        }
+      ],
+      "primary": null,
+      "sourcePath": "/admin/staff/list"
+    },
+    {
+      "path": "/admin/staff/experts",
+      "title": "전문가 관리",
+      "group": "settings",
+      "domain": "experts",
+      "columns": [
+        "image",
+        "name",
+        "description",
+        "visible"
+      ],
+      "description": "전문가 소개와 활동 상태를 관리합니다.",
+      "fields": [
+        {
+          "key": "staffId",
+          "label": "연결 운영진",
+          "type": "select"
+        },
+        {
+          "key": "name",
+          "label": "전문가 이름",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "nickname",
+          "label": "전문가 닉네임",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "loginId",
+          "label": "전문가 아이디",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "description",
+          "label": "소개 문구",
+          "type": "textarea"
+        },
+        {
+          "key": "image",
+          "label": "프로필 이미지",
+          "type": "image"
+        },
+        {
+          "key": "order",
+          "label": "노출 순서",
+          "type": "number",
+          "min": 1
+        },
+        {
+          "key": "visible",
+          "label": "활동 상태",
+          "type": "select",
+          "options": [
+            "활동",
+            "중지"
+          ]
+        },
+        {
+          "key": "link",
+          "label": "소개 연결주소",
+          "type": "url"
+        }
+      ],
+      "primary": null,
+      "sourcePath": "/admin/staff/experts",
+      "navHidden": true
+    },
+    {
+      "path": "/admin/staff/signup",
+      "title": "관리자 회원가입 시안",
+      "group": "settings",
+      "domain": "staff",
+      "columns": [],
+      "fields": [],
+      "description": "운영진 또는 전문가로 가입하고 최종관리자 승인을 기다립니다.",
+      "navHidden": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "members",
+      "title": "회원 관리",
+      "icon": "Users"
+    },
+    {
+      "id": "payments",
+      "title": "결제 관리",
+      "icon": "CreditCard"
+    },
+    {
+      "id": "vip",
+      "title": "VIP 상품",
+      "icon": "Crown"
+    },
+    {
+      "id": "board",
+      "title": "게시글 · 교육영상",
+      "icon": "FileText"
+    },
+    {
+      "id": "design",
+      "title": "사이트 화면",
+      "icon": "PanelsTopLeft"
+    },
+    {
+      "id": "promotion",
+      "title": "쿠폰 · 포인트",
+      "icon": "Gift"
+    },
+    {
+      "id": "sms",
+      "title": "문자 관리",
+      "icon": "MessageSquare"
+    },
+    {
+      "id": "analytics",
+      "title": "통계 · 기록",
+      "icon": "ChartColumn"
+    },
+    {
+      "id": "settings",
+      "title": "운영 설정",
+      "icon": "Settings"
+    }
+  ]
+}

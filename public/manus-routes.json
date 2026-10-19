@@ -1,0 +1,212 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "윌클럽 메인"
+    },
+    {
+      "path": "/paidInfo",
+      "title": "주식 교육 영상"
+    },
+    {
+      "path": "/admin",
+      "title": "관리자"
+    },
+    {
+      "path": "/admin#/admin/members/all",
+      "title": "전체 회원"
+    },
+    {
+      "path": "/admin#/admin/members/bdc41bee-79a6-401a-bac8-254fe58d4e22",
+      "title": "골드마스터반 회원"
+    },
+    {
+      "path": "/admin#/admin/members/c2955b9b-27d5-47f3-b0f8-bf8b0df93f78",
+      "title": "단타반 회원"
+    },
+    {
+      "path": "/admin#/admin/members/5677b74b-f568-45ed-8bb1-ff79f0c94598",
+      "title": "골드해외반 회원"
+    },
+    {
+      "path": "/admin#/admin/members/450c3fb5-17b3-4421-9b62-e4fcbc02f1a1",
+      "title": "골드텐버거반 회원"
+    },
+    {
+      "path": "/admin#/admin/members/98ec487c-dc55-4294-9a90-ab94afc32d7d",
+      "title": "꽃게선생반 회원"
+    },
+    {
+      "path": "/admin#/admin/members/expired",
+      "title": "만기 회원"
+    },
+    {
+      "path": "/admin#/admin/members/inactive",
+      "title": "장기 미접속 회원"
+    },
+    {
+      "path": "/admin#/admin/members/withdrawn",
+      "title": "탈퇴 회원"
+    },
+    {
+      "path": "/admin#/admin/members/stats",
+      "title": "회원 가입 통계"
+    },
+    {
+      "path": "/admin#/admin/payments/all",
+      "title": "전체 결제 내역"
+    },
+    {
+      "path": "/admin#/admin/payments/card",
+      "title": "카드 결제 내역"
+    },
+    {
+      "path": "/admin#/admin/payments/bank",
+      "title": "무통장 입금 내역"
+    },
+    {
+      "path": "/admin#/admin/vip-products",
+      "title": "VIP 상품 관리"
+    },
+    {
+      "path": "/admin#/admin/board/expert/8bd3703c-2f94-4067-b366-f97323116386",
+      "title": "골드마스터 게시판"
+    },
+    {
+      "path": "/admin#/admin/board/expert/a92bf325-8f3a-48b1-b656-4b323c5f5d69",
+      "title": "꽃게선생 게시판"
+    },
+    {
+      "path": "/admin#/admin/board/paid-stock/8bd3703c-2f94-4067-b366-f97323116386",
+      "title": "골드마스터 주식교육영상"
+    },
+    {
+      "path": "/admin#/admin/board/paid-stock/a92bf325-8f3a-48b1-b656-4b323c5f5d69",
+      "title": "꽃게선생 주식교육영상"
+    },
+    {
+      "path": "/admin#/admin/board/support/notice",
+      "title": "공지사항"
+    },
+    {
+      "path": "/admin#/admin/board/support/event",
+      "title": "이벤트"
+    },
+    {
+      "path": "/admin#/admin/board/support/faq",
+      "title": "자주 묻는 질문"
+    },
+    {
+      "path": "/admin#/admin/design/main",
+      "title": "메인페이지 관리"
+    },
+    {
+      "path": "/admin#/admin/design/terms",
+      "title": "약관 · 정책 통합 관리"
+    },
+    {
+      "path": "/admin#/admin/promotion/coupon",
+      "title": "서비스쿠폰발행"
+    },
+    {
+      "path": "/admin#/admin/promotion/point",
+      "title": "포인트 관리"
+    },
+    {
+      "path": "/admin#/admin/sms/compose",
+      "title": "실시간 문자 작성"
+    },
+    {
+      "path": "/admin#/admin/sms/auto",
+      "title": "자동 문자 설정"
+    },
+    {
+      "path": "/admin#/admin/sms/history",
+      "title": "문자 발송 내역"
+    },
+    {
+      "path": "/admin#/admin/analytics/all",
+      "title": "전체 통계"
+    },
+    {
+      "path": "/admin#/admin/analytics/total-revenue",
+      "title": "전체 매출내역"
+    },
+    {
+      "path": "/admin#/admin/analytics/revenue",
+      "title": "전문가 월별 매출내역"
+    },
+    {
+      "path": "/admin#/admin/analytics/access",
+      "title": "접속 추이"
+    },
+    {
+      "path": "/admin#/admin/analytics/access-status",
+      "title": "홈페이지 접속 현황"
+    },
+    {
+      "path": "/admin#/admin/analytics/admin-access-status",
+      "title": "관리자 접속 기록"
+    },
+    {
+      "path": "/admin#/admin/settings/general",
+      "title": "일반 설정"
+    },
+    {
+      "path": "/admin#/admin/staff/list",
+      "title": "운영진 관리"
+    },
+    {
+      "path": "/admin/:path*",
+      "title": "관리자 바로가기"
+    },
+    {
+      "path": "/about",
+      "title": "회사소개"
+    },
+    {
+      "path": "/guide",
+      "title": "이용방법"
+    },
+    {
+      "path": "/freeInfo",
+      "title": "무료주식정보"
+    },
+    {
+      "path": "/vip",
+      "title": "VIP 회원가입"
+    },
+    {
+      "path": "/support",
+      "title": "고객센터"
+    },
+    {
+      "path": "/support/notice",
+      "title": "공지사항"
+    },
+    {
+      "path": "/support/faq",
+      "title": "자주 묻는 질문"
+    },
+    {
+      "path": "/support/event",
+      "title": "이벤트"
+    },
+    {
+      "path": "/login",
+      "title": "회원 로그인"
+    },
+    {
+      "path": "/freeInfo/articles/:id",
+      "title": "무료주식정보 게시글 상세"
+    },
+    {
+      "path": "/support/event/:id",
+      "title": "이벤트 상세"
+    },
+    {
+      "path": "/myInfo",
+      "title": "내 정보"
+    }
+  ]
+}

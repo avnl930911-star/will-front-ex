@@ -1,0 +1,199 @@
+{
+  "ao": [
+    {
+      "id": "gold",
+      "image": "/home/1791354974127.png",
+      "alt": "윌클럽 골드마스터반 안내 배너",
+      "href": "/vip?expert_id=8bd3703c-2f94-4067-b366-f97323116386&vip_product_id=2914806e-da08-4649-9ca3-7cda12f61089"
+    },
+    {
+      "id": "ggot",
+      "image": "/home/1791354887788.png",
+      "alt": "윌클럽 꽃게선생반 안내 배너",
+      "href": "/vip?expert_id=a92bf325-8f3a-48b1-b656-4b323c5f5d69&vip_product_id=e46427ed-40fc-4e10-91f8-12a83d34253e"
+    },
+    {
+      "id": "day",
+      "image": "/home/1791246938659.png",
+      "alt": "윌클럽 단타반 안내 배너",
+      "href": "/vip?expert_id=8bd3703c-2f94-4067-b366-f97323116386&vip_product_id=9586ec78-0bdc-44e5-9f2d-a294556f904f"
+    }
+  ],
+  "M2": [
+    {
+      "name": "골드마스터반",
+      "image": "/home/icon_goldmaster01.png",
+      "theme": "gold",
+      "href": "/vip?expert_id=8bd3703c-2f94-4067-b366-f97323116386&vip_product_id=2914806e-da08-4649-9ca3-7cda12f61089"
+    },
+    {
+      "name": "꽃게선생반",
+      "image": "/home/icon_crab01.png",
+      "theme": "ggot",
+      "href": "/vip?expert_id=a92bf325-8f3a-48b1-b656-4b323c5f5d69&vip_product_id=e46427ed-40fc-4e10-91f8-12a83d34253e"
+    },
+    {
+      "name": "단타반",
+      "image": "/home/1788503417176.png",
+      "theme": "day",
+      "href": "/vip?expert_id=8bd3703c-2f94-4067-b366-f97323116386&vip_product_id=9586ec78-0bdc-44e5-9f2d-a294556f904f"
+    },
+    {
+      "name": "골드텐버거반",
+      "image": "/home/1791247027617.png",
+      "theme": "ten",
+      "href": "/vip?expert_id=8bd3703c-2f94-4067-b366-f97323116386&vip_product_id=7b415e2e-bc16-4e29-be7f-5bf11f446292"
+    }
+  ],
+  "N2": [
+    {
+      "title": "공지사항",
+      "image": "/home/quick-notice.png",
+      "href": "/support/notice",
+      "theme": "notice"
+    },
+    {
+      "title": "무료주식정보",
+      "image": "/home/quick-info.png",
+      "href": "/freeInfo",
+      "theme": "info"
+    },
+    {
+      "title": "진행중인이벤트",
+      "image": "/home/quick-event.png",
+      "href": "/support/event",
+      "theme": "event"
+    },
+    {
+      "title": "자주묻는질문",
+      "image": "/home/quick-faq.png",
+      "href": "/support/faq",
+      "theme": "contact"
+    }
+  ],
+  "videos": [
+    {
+      "id": "gm-m1",
+      "title": "이번 주 시장 브리핑 — 핵심만",
+      "expert": "goldmaster",
+      "sub": "market",
+      "paid": true,
+      "price": 99000,
+      "duration": "18:32",
+      "publishedAt": "2026-10-09T14:00:00+09:00",
+      "hue": 25
+    },
+    {
+      "id": "gm-a1",
+      "title": "유리기판 밸류체인 완전 분석",
+      "expert": "goldmaster",
+      "sub": "analysis",
+      "paid": true,
+      "price": 700000,
+      "duration": "42:18",
+      "publishedAt": "2026-10-09T13:00:00+09:00",
+      "hue": 210
+    },
+    {
+      "id": "gm-e1",
+      "title": "수급으로 읽는 매매 타이밍",
+      "expert": "goldmaster",
+      "sub": "education",
+      "paid": true,
+      "price": 330000,
+      "duration": "48:22",
+      "publishedAt": "2026-10-09T12:00:00+09:00",
+      "hue": 168
+    },
+    {
+      "id": "gg-m1",
+      "title": "장중 시황 — 주도 업종 읽기",
+      "expert": "ggotge",
+      "sub": "market",
+      "paid": true,
+      "price": 110000,
+      "duration": "16:41",
+      "publishedAt": "2026-10-09T11:00:00+09:00",
+      "hue": 55
+    }
+  ],
+  "experts": {
+    "goldmaster": {
+      "name": "골드마스터",
+      "role": "매매의 대가",
+      "tagline": "정보력과 타이밍이 핵심. 시키는 대로 따라만 하시면 됩니다.",
+      "monogram": "G"
+    },
+    "ggotge": {
+      "name": "꽃게선생",
+      "role": "맥점 포착",
+      "tagline": "대형주·업종대표주·시장주도주를 맥점에서 콕 찍어 드립니다.",
+      "monogram": "C"
+    }
+  },
+  "oo": [
+    {
+      "id": "analysis",
+      "label": "주식분석",
+      "description": "산업과 기업을 깊이 읽는 전문가의 시선",
+      "english": "STOCK ANALYSIS"
+    },
+    {
+      "id": "education",
+      "label": "주식교육",
+      "description": "기초부터 실전까지, 흔들리지 않는 투자 원칙",
+      "english": "INVESTMENT CLASS"
+    },
+    {
+      "id": "market",
+      "label": "주식시황",
+      "description": "시장 흐름을 놓치지 않는 가장 좋은 습관",
+      "english": "MARKET INSIGHT"
+    },
+    {
+      "id": "free",
+      "label": "무료영상",
+      "description": "투자의 첫걸음, 부담 없이 시작하세요",
+      "english": "FREE CLASS"
+    }
+  ],
+  "T2": {
+    "gm-a1": "유리기판 밸류체인 완전 분석",
+    "gm-a2": "MLCC 업황 바닥인가 — 투자 포인트",
+    "gm-a3": "삼성전자 실적 이후 시나리오 세 가지",
+    "gm-e1": "수급으로 읽는 매매 타이밍",
+    "gm-e2": "손절과 익절, 원칙을 세우는 법",
+    "gm-e3": "기관 따라가기 — 실전 복기",
+    "gm-m1": "이번 주 시장 브리핑 — 핵심만",
+    "gm-m2": "환율·금리와 국내 증시",
+    "gm-m3": "외국인 수급 체크포인트",
+    "gm-f1": "초보가 꼭 알아야 할 차트 기초",
+    "gm-f2": "오늘의 시장, 한눈에",
+    "gg-a1": "AI 반도체 반등 — 맥점 짚기",
+    "gg-a2": "AI 버블인가, 실적인가",
+    "gg-a3": "2차전지 소외주, 지금이 자리인가",
+    "gg-e1": "맥점 매매 — 입문부터 실전",
+    "gg-e2": "대형주만 다루는 이유",
+    "gg-e3": "분할 매수·매도 설계하기",
+    "gg-m1": "장중 시황 — 주도 업종 읽기",
+    "gg-m2": "미국 증시 마감 후 국내 대응",
+    "gg-m3": "주간 이벤트와 변동성 대비",
+    "gg-f1": "주식, 처음 사는 법",
+    "gg-f2": "왜 주가는 오르고 내릴까",
+    "gg-f3": "급등주 브리핑 — 공개판"
+  },
+  "Kv": [
+    "gm-a1",
+    "gm-a3",
+    "gm-m1",
+    "gm-m2",
+    "gm-f1",
+    "gg-a2",
+    "gg-a3",
+    "gg-f3"
+  ],
+  "yv": [
+    "gg-m1",
+    "gm-f2"
+  ]
+}
